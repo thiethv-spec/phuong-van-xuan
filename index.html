@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Di tích lịch sử – Phường Vạn Xuân, Tỉnh Thái Nguyên</title>
+  <meta name="description" content="Bản đồ số và thông tin các di tích lịch sử, lễ hội truyền thống tiêu biểu trên địa bàn phường Vạn Xuân, tỉnh Thái Nguyên.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 + Icons + Leaflet (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Theme (tokens màu, font, component) -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body data-route="home">
+
+  <!-- ================= HEADER (assets/js/layout.js) ================= -->
+  <div data-vx-header></div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="vx-hero" aria-label="Giới thiệu">
+      <div class="container container-vx-narrow vx-hero__actions">
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-3">
+          <a href="#ban-do" class="btn btn-vx-gold">Bản đồ số <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <form class="vx-search" id="heroSearch" role="search">
+            <i class="bi bi-search fs-5" aria-hidden="true"></i>
+            <input class="form-control" type="search" name="q" placeholder="Tìm kiếm di tích..." aria-label="Tìm kiếm di tích" list="relicNames">
+            <datalist id="relicNames"></datalist>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BẢN ĐỒ SỐ ================= -->
+    <section class="vx-section vx-section--red-dark" id="ban-do">
+      <div class="container container-vx">
+        <div class="vx-head vx-head--dark">
+          <h2 class="vx-title vx-title--lined"><span class="vx-text-gradient">Bản đồ số di tích</span></h2>
+          <p class="vx-lead">Khám phá vị trí các di tích lịch sử tiêu biểu trên địa bàn phường Vạn Xuân.</p>
+        </div>
+
+        <div class="vx-map-frame">
+          <div id="vxMap" class="vx-map" role="region" aria-label="Bản đồ số di tích phường Vạn Xuân"></div>
+
+          <div class="vx-map-toolbar">
+            <button type="button" class="vx-chip vx-chip--solid" id="btnFitBoundary">Vừa ranh giới phường</button>
+            <label class="vx-chip"><input class="form-check-input" type="checkbox" id="fltBoundary" checked> Ranh giới phường</label>
+            <label class="vx-chip"><input class="form-check-input" type="checkbox" id="fltNear" checked> Cặp điểm gần nhau</label>
+            <label class="vx-chip"><input class="form-check-input" type="checkbox" id="fltFar" checked> Cặp điểm xa nhất</label>
+            <label class="vx-chip"><input class="form-check-input" type="checkbox" id="fltLabels"> Hiện tên điểm</label>
+            <button type="button" class="vx-chip d-lg-none" id="btnLegend"><i class="bi bi-list-ul" aria-hidden="true"></i> Chú giải</button>
+          </div>
+          <button type="button" class="vx-map-layer-btn" id="btnLayer" aria-label="Đổi lớp bản đồ"><i class="bi bi-layers-fill" aria-hidden="true"></i></button>
+
+          <aside class="vx-legend" aria-label="Chú giải khoảng cách">
+            <div class="vx-legend__title">Chú giải khoảng cách</div>
+            <ul>
+              <li><span class="sw sw--dot" style="background:var(--vx-marker-cover);border:1px solid var(--vx-stone-700)"></span>Marker ảnh bìa</li>
+              <li><span class="sw sw--dot" style="background:var(--vx-crimson-400);border:1px solid var(--vx-white);outline:1px solid var(--vx-stone-300)"></span>Chưa có ảnh bìa</li>
+              <li><span class="sw sw--area"></span>Ranh giới Vạn Xuân</li>
+              <li><span class="sw sw--line" style="background:var(--vx-dist-1)"></span>Dưới 250 m</li>
+              <li><span class="sw sw--line" style="background:var(--vx-dist-2)"></span>250–750 m</li>
+              <li><span class="sw sw--line" style="background:var(--vx-dist-3)"></span>750 m–1,5 km</li>
+              <li><span class="sw sw--line" style="background:var(--vx-dist-4)"></span>Trên 1,5 km</li>
+              <li><span class="sw sw--dash"></span>Cặp xa nhất</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KHÁM PHÁ DI TÍCH ================= -->
+    <section class="vx-section vx-section--cream" id="di-tich">
+      <div class="container container-vx-narrow">
+        <div class="vx-head vx-head--serif-lead">
+          <div class="vx-eyebrow">17 điểm di tích cấp tỉnh</div>
+          <h2 class="vx-title">Khám phá di tích</h2>
+          <p class="vx-lead">Những dấu xưa còn lưu giữ trong ký ức làng và đời sống cộng đồng Vạn Xuân.</p>
+        </div>
+
+        <div class="vx-carousel">
+          <div class="vx-carousel__track" id="heritageTrack" tabindex="0" aria-label="Danh sách di tích"></div>
+          <div class="vx-carousel__nav">
+            <button type="button" class="btn-vx-circle" data-carousel-prev aria-label="Lùi lại"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+            <button type="button" class="btn-vx-circle btn-vx-circle--gold" data-carousel-next aria-label="Xem tiếp"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SỰ KIỆN & LỄ HỘI ================= -->
+    <section class="vx-section vx-section--red" id="le-hoi">
+      <div class="container container-vx">
+        <div class="vx-head vx-head--dark vx-head--serif-lead">
+          <div class="vx-eyebrow">Nhịp hội làng</div>
+          <h2 class="vx-title">Sự kiện và Lễ hội</h2>
+          <p class="vx-lead">Các lễ hội truyền thống tiêu biểu tại phường Vạn Xuân.</p>
+        </div>
+        <div class="row g-4 g-xl-4 justify-content-center" id="festivalGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (assets/js/layout.js) ================= -->
+  <div data-vx-footer></div>
+
+  <!-- ================= TEMPLATES (component tái sử dụng) ================= -->
+  <template id="tplCardInfo">
+    <div class="vx-carousel__item">
+      <div class="vx-card-info-wrap">
+        <article class="vx-card-info">
+          <h3></h3>
+          <p></p>
+          <a class="btn btn-vx-outline" href="#"></a>
+        </article>
+      </div>
+    </div>
+  </template>
+
+  <template id="tplCardPhoto">
+    <div class="vx-carousel__item">
+      <a class="vx-card" href="#">
+        <img class="vx-card__img" src="" alt="" loading="lazy">
+        <h3 class="vx-card__title"></h3>
+      </a>
+    </div>
+  </template>
+
+  <template id="tplFestival">
+    <div class="col-12 col-md-6 col-lg-4">
+      <a class="vx-fest" href="#">
+        <div class="vx-fest__inner">
+          <img class="vx-fest__img" src="" alt="" loading="lazy">
+          <div class="vx-fest__bar">
+            <h3 class="vx-fest__title"></h3>
+            <span class="btn-vx-circle btn-vx-circle--gold" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="root_data/vx-data.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

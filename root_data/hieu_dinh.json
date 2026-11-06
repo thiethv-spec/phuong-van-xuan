@@ -1,0 +1,98 @@
+{
+  "_readme": "Hiệu đính dữ liệu đã kiểm chứng – áp lên dữ liệu Excel khi chạy tools/build_data.py. 'set' = trường được ghi đè (đường dẫn kiểu a.b). 'log' = vết kiểm chứng kèm nguồn (gồm cả điểm đúng / chưa xác minh / mâu thuẫn nguồn). Tra cứu ngày 06/11/2026.",
+  "_src": {
+    "PL2": "https://storage-vnportal.vnpt.vn/gov-tnn/11216/FileQuanTriTinTuc/41.2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%202%20k%C3%A8m%20theo%20Q%C4%90%20ph%C3%AA%20duy%E1%BB%87t%20m%E1%BB%A9c%20h%E1%BB%97%20tr%E1%BB%A3%20kinh%20ph%C3%AD.signed.pdf",
+    "DM2014": "https://caselaw.vn/van-ban-phap-luat/160281-quyet-dinh-so-48-2014-qd-ubnd-ngay-11-11-2014-ve-quy-che-quan-ly-bao-ve-va-phat-huy-gia-tri-di-tich-lich-su-van-hoa-danh-lam-thang-canh-tren-dia-ban-tinh-thai-nguyen",
+    "HANNOM2009": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608"
+  },
+  "sites": {
+    "chua_doi_cao": {
+      "set": {
+        "headline": "Ngôi chùa trên đồi thờ Phật, thờ Mẫu, còn bia đá năm 1698",
+        "tagline": "Hội chùa 14–15 tháng Giêng · Di tích cấp tỉnh từ 2004",
+        "recognition.number": "2775/QĐ-UB",
+        "recognition.text": "Quyết định số 2775/QĐ-UB ngày 12/11/2004 của UBND tỉnh Thái Nguyên.",
+        "timeline": [
+          {"time": "1698", "text": "niên đại bia “Đôi Cao tự ký”."},
+          {"time": "1999", "text": "xã trùng tu chùa, xây gác chuông."},
+          {"time": "2002", "text": "nhân dân và các nhà hảo tâm công đức hơn 120 triệu đồng tu bổ chùa."},
+          {"time": "12/11/2004", "text": "xếp hạng di tích cấp tỉnh."},
+          {"time": "25/10/2009", "text": "khảo sát lại văn bia, xác định niên đại bia."}
+        ]
+      },
+      "log": [
+        {"field": "name", "status": "mâu thuẫn nguồn", "note": "Phụ lục II (2026) ghi “Chùa Đồi Cao”; danh mục 2014, Viện Hán Nôm, Báo Thái Nguyên 2011 và văn bia “Đôi Cao tự ký” ghi “Đôi Cao”. Giữ tên hành chính mới nhất, “Đôi Cao” là tên gọi khác.", "sources": ["PL2", "DM2014", "HANNOM2009", "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"]},
+        {"field": "recognition.number", "status": "sửa", "from": "2775/QĐ-UBND", "to": "2775/QĐ-UB", "note": "Danh mục 2014 ghi cả loạt QĐ ngày 12/11/2004 (2773–2779) với ký hiệu /QĐ-UB; Phụ lục II 2026 chuẩn hoá thành QĐ-UBND. Chưa thấy bản gốc.", "sources": ["DM2014", "PL2"]},
+        {"field": "recognition.date / area / worship / relics", "status": "đúng", "note": "12/11/2004; 23.199 m²; thờ Phật, thờ Mẫu; 4 bia, 9 cột đá, 4 câu đối, 2 hoành phi.", "sources": ["PL2", "DM2014", "HANNOM2009"]},
+        {"field": "timeline", "status": "bổ sung", "note": "Mốc 1999, 2002 theo Báo Thái Nguyên 2011; ngày khảo sát 25/10/2009 theo Viện Hán Nôm. Niên đại khởi dựng (thời Lý / Hậu Lê) chưa thống nhất nên không đưa vào.", "sources": ["https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C", "HANNOM2009"]},
+        {"field": "address", "status": "chưa xác minh", "note": "Báo 2011 ghi chùa trên quả đồi thuộc thôn Phúc Duyên, xã Tân Hương; chưa thấy nguồn chính thức ghi “TDP Đồi Cao”.", "sources": ["https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"]}
+      ]
+    },
+    "dinh_phuc_duyen": {
+      "set": {
+        "headline": "Đình thờ thần Tam Giang, còn giữ 2 sắc phong triều Khải Định",
+        "tagline": "Dời về vị trí hiện nay từ mùa đông năm 1946",
+        "architecture": "Danh mục tỉnh ghi khu di tích khoảng 736 m², gồm đình, nhà sắp lễ và công trình phụ trợ (Báo Thái Nguyên 2020 mô tả khuôn viên trên 1.000 m²). Đình kiểu chữ “đinh”, 3 gian 2 dĩ, cột kèo gỗ lim, cửa võng chạm trổ sơn son thếp vàng; có trống cái đường kính mặt khoảng 1 m. Khảo sát Hán Nôm ghi nhận 2 sắc phong (triều Khải Định năm thứ IX), 1 bia và 2 câu đối.",
+        "timeline": [
+          {"time": "1946", "text": "mùa đông năm Bính Tuất, đình được di dời về vị trí hiện nay."},
+          {"time": "25/01/2006", "text": "xếp hạng di tích cấp tỉnh."},
+          {"time": "2009", "text": "khảo sát Hán Nôm ghi nhận sắc phong, bia và câu đối còn lưu tại đình."}
+        ],
+        "sources": [
+          {"url": "https://storage-vnportal.vnpt.vn/gov-tnn/11216/FileQuanTriTinTuc/41.2.%20Ph%E1%BB%A5%20l%E1%BB%A5c%202%20k%C3%A8m%20theo%20Q%C4%90%20ph%C3%AA%20duy%E1%BB%87t%20m%E1%BB%A9c%20h%E1%BB%97%20tr%E1%BB%A3%20kinh%20ph%C3%AD.signed.pdf", "label": "Danh mục di tích cấp tỉnh (2026)"},
+          {"url": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608", "label": "Viện Hán Nôm: di sản Phổ Yên"},
+          {"url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE", "label": "Báo Thái Nguyên: Đình Phúc Duyên (2020)"}
+        ]
+      },
+      "log": [
+        {"field": "name / worship / recognition", "status": "đúng", "note": "Đình thờ thần Tam Giang; 204/QĐ-UBND ngày 25/01/2006, xếp hạng riêng.", "sources": ["PL2", "DM2014"]},
+        {"field": "architecture.area", "status": "mâu thuẫn nguồn", "note": "736 m² (Phụ lục II – diện tích khu di tích) vs “khuôn viên trên 1.000 m²” (Báo TN 2020) – khác phạm vi; dùng 736 m², ghi chú con số báo chí.", "sources": ["PL2", "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"]},
+        {"field": "sources", "status": "sửa", "note": "Bổ sung URL bài Báo Thái Nguyên 08/08/2020 (Excel chỉ có nhãn, không có link).", "sources": ["https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"]},
+        {"field": "address", "status": "chưa xác minh", "note": "Báo 2020 ghi đình ở xóm Duyên Bắc, trên trục đường liên xã Tân Hương – Tiên Phong; chưa có nguồn tên TDP sau 2025.", "sources": ["https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"]}
+      ]
+    },
+    "dinh_phu_huong": {
+      "set": {
+        "headline": "Đình làng thờ Tam Giang, lưu giữ 7 tấm bia Hán Nôm",
+        "tagline": "Di tích lịch sử – văn hóa cấp tỉnh từ năm 2007",
+        "history": "Đình thờ Tam Giang, thuộc khu vực Tân Hương trước hợp nhất, được UBND tỉnh Thái Nguyên xếp hạng di tích cấp tỉnh năm 2007. Khảo sát di sản Hán Nôm năm 2009 ghi nhận tại đình 1 bài thơ, 7 bia, 5 câu đối và 3 hoành phi."
+      },
+      "log": [
+        {"field": "name / worship / recognition / area / relics", "status": "đúng", "note": "Thờ Tam Giang; 08/QĐ-UBND ngày 04/01/2007; 815 m²; 1 bài thơ, 7 bia, 5 câu đối, 3 hoành phi.", "sources": ["PL2", "DM2014", "HANNOM2009"]},
+        {"field": "history", "status": "sửa", "note": "Bỏ đoạn diễn giải “văn khắc cho thấy quá trình công đức, trùng tu…” vì nguồn Hán Nôm chỉ thống kê số lượng, không mô tả nội dung.", "sources": ["HANNOM2009"]},
+        {"field": "address", "status": "chưa xác minh", "note": "Phụ lục II chỉ ghi “Phường Vạn Xuân”.", "sources": ["PL2"]}
+      ]
+    }
+  },
+  "festivals": {
+    "le_hoi_03": {
+      "set": {
+        "rituals": "Dâng hương, cầu cho năm mới an lành, mưa thuận gió hòa, vạn vật tốt tươi",
+        "activities": "Đấu vật, cờ tướng, chọi gà, giao lưu văn hóa văn nghệ"
+      },
+      "log": [
+        {"field": "lunarTime", "status": "đúng", "note": "Ngày 14–15 tháng Giêng.", "sources": ["https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"]},
+        {"field": "rituals", "status": "sửa", "note": "Bỏ “tụng kinh Dược Sư” – không có nguồn.", "sources": ["https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"]}
+      ]
+    },
+    "le_hoi_05": {
+      "set": {
+        "rituals": "Tế lễ tại đình, dùng trống cái làng làm hiệu lệnh",
+        "activities": "Kéo co, đấu vật, thi đấu cầu lông, bóng đá mini"
+      },
+      "log": [
+        {"field": "lunarTime", "status": "đúng", "note": "Các lễ (khai xuân, vào hạ, lễ hội mùa) nay gộp làm một, tổ chức dịp đầu năm; không có ngày cụ thể.", "sources": ["https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"]},
+        {"field": "rituals", "status": "sửa", "note": "“Khai hội bằng trống cái, tế Thành hoàng, cầu mùa” không có trong nguồn; chỉ giữ chi tiết trống cái dùng khi tế lễ.", "sources": ["https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"]}
+      ]
+    },
+    "le_hoi_08": {
+      "set": {
+        "unverified": true,
+        "source": "Chưa có nguồn công khai về lễ hội (nguồn Viện Hán Nôm 2009 trong Excel chỉ thống kê văn khắc)"
+      },
+      "log": [
+        {"field": "lunarTime / rituals / activities", "status": "chưa xác minh", "note": "Không tìm thấy nguồn nào về hội làng Phù Hương; cần xác minh tại địa phương.", "sources": []}
+      ]
+    }
+  }
+}

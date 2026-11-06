@@ -1,0 +1,452 @@
+/* =========================================================
+   DI TÍCH LỊCH SỬ – PHƯỜNG VẠN XUÂN
+   Theme config (design tokens) + Bootstrap 5.3 overrides
+   Mọi màu / font / khoảng cách lấy từ biến bên dưới – sửa 1 chỗ dùng toàn site.
+   ========================================================= */
+
+/* ---------- 1. DESIGN TOKENS ---------- */
+:root {
+  /* Crimson (đỏ son) */
+  --vx-crimson-950: #3a0508;
+  --vx-crimson-900: #4a080d;
+  --vx-crimson-850: #52090e;
+  --vx-crimson-800: #5c0e13;
+  --vx-crimson-700: #6b1219;
+  --vx-crimson-650: #6c090e;
+  --vx-crimson-600: #7d141d;
+  --vx-crimson-500: #821922;
+  --vx-crimson-400: #991b1b;
+
+  /* Gold (nhũ vàng) */
+  --vx-gold-50: #fff2c6;
+  --vx-gold-100: #fae6b8;
+  --vx-gold-150: #fde68a;
+  --vx-gold-200: #efd7a3;
+  --vx-gold-300: #f5d38a;
+  --vx-gold-350: #ecd07a;
+  --vx-gold-400: #e4c583;
+  --vx-gold-450: #e2ba6f;
+  --vx-gold-500: #e7b16a;
+  --vx-gold-600: #cba85a;
+  --vx-gold-700: #b89139;
+  --vx-gold-800: #a16207;
+  --vx-gold-line: rgba(251, 191, 36, 0.8);
+  --vx-gold-border: rgba(230, 202, 123, 0.5);
+
+  /* Neutral / paper */
+  --vx-paper: #f9f6f0;
+  --vx-paper-light: #fdfbf7;
+  --vx-cream-100: #fef3c7;
+  --vx-cream-200: #e7d4b5;
+  --vx-stone-900: #1c1917;
+  --vx-stone-700: #44403c;
+  --vx-stone-600: #57534e;
+  --vx-stone-500: #78716c;
+  --vx-stone-400: #a8a29e;
+  --vx-stone-300: #d6d3d1;
+  --vx-stone-200: #e7e5e4;
+  --vx-stone-100: #f5f5f4;
+  --vx-white: #ffffff;
+
+  /* Map distance legend */
+  --vx-dist-1: #dc2626; /* < 250 m */
+  --vx-dist-2: #d97706; /* 250–750 m */
+  --vx-dist-3: #0d9488; /* 750 m–1,5 km */
+  --vx-dist-4: #1d4ed8; /* > 1,5 km */
+  --vx-dist-far: #2563eb; /* cặp xa nhất */
+  --vx-marker-cover: #f59e0b;
+
+  /* Typography */
+  --vx-font-heading: "Lora", Georgia, "Times New Roman", serif;
+  --vx-font-body: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --vx-fs-display: clamp(2rem, 1.2rem + 3.2vw, 3.5rem);
+  --vx-fs-h2: clamp(1.875rem, 1.3rem + 2.2vw, 3rem);
+  --vx-fs-h3: 1.125rem;
+  --vx-fs-eyebrow: 0.8125rem;
+
+  /* Radius / shadow / spacing */
+  --vx-radius-sm: 4px;
+  --vx-radius: 8px;
+  --vx-radius-lg: 12px;
+  --vx-radius-xl: 16px;
+  --vx-shadow-sm: 0 1px 3px rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+  --vx-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+  --vx-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, .15), 0 8px 10px -6px rgba(0, 0, 0, .1);
+  --vx-shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, .35);
+  --vx-section-py: clamp(3rem, 2rem + 4vw, 5rem);
+  --vx-header-h: 92px;
+  --vx-container: 1240px;
+  --vx-container-narrow: 1040px;
+
+  /* Gradients */
+  --vx-gradient-gold-text: linear-gradient(180deg, var(--vx-gold-50) 0%, var(--vx-gold-350) 50%, var(--vx-gold-700) 100%);
+  --vx-gradient-card: linear-gradient(180deg, var(--vx-crimson-700) 0%, #420609 100%);
+
+  /* Background images (ảnh nền section) */
+  --vx-bg-red: url("../img/bg-section-red.jpg");
+  --vx-bg-red-dark: url("../img/bg-section-red-dark.jpg");
+  --vx-bg-cream: url("../img/bg-section-cream.jpg");
+  --vx-bg-footer: url("../img/bg-footer-lotus.jpg");
+  --vx-hero-img: url("../img/hero-van-xuan.jpg");
+
+  /* ---------- 2. BOOTSTRAP VARIABLE MAPPING ---------- */
+  --bs-body-font-family: var(--vx-font-body);
+  --bs-body-color: var(--vx-stone-700);
+  --bs-body-bg: var(--vx-paper-light);
+  --bs-primary: var(--vx-crimson-800);
+  --bs-primary-rgb: 92, 14, 19;
+  --bs-secondary: var(--vx-gold-200);
+  --bs-secondary-rgb: 239, 215, 163;
+  --bs-link-color: var(--vx-crimson-700);
+  --bs-link-color-rgb: 107, 18, 25;
+  --bs-link-hover-color: var(--vx-crimson-400);
+  --bs-link-hover-color-rgb: 153, 27, 27;
+  --bs-border-color: var(--vx-stone-200);
+  --bs-border-radius: var(--vx-radius);
+  --bs-border-radius-lg: var(--vx-radius-lg);
+  --bs-border-radius-xl: var(--vx-radius-xl);
+  --bs-focus-ring-color: rgba(228, 197, 131, .45);
+}
+
+/* ---------- 3. BASE ---------- */
+body {
+  font-family: var(--vx-font-body);
+  background: var(--vx-paper-light);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6, .font-heading { font-family: var(--vx-font-heading); }
+.container-vx { max-width: var(--vx-container); }
+.container-vx-narrow { max-width: var(--vx-container-narrow); }
+.text-gold { color: var(--vx-gold-300) !important; }
+.text-crimson { color: var(--vx-crimson-800) !important; }
+img { max-width: 100%; }
+
+/* ---------- 4. BUTTONS (dùng biến --bs-btn-* của Bootstrap) ---------- */
+.btn-vx-gold {
+  --bs-btn-font-family: var(--vx-font-heading);
+  --bs-btn-font-weight: 700;
+  --bs-btn-font-size: 1.125rem;
+  --bs-btn-color: var(--vx-crimson-850);
+  --bs-btn-bg: var(--vx-gold-200);
+  --bs-btn-border-color: var(--vx-gold-400);
+  --bs-btn-hover-color: var(--vx-crimson-850);
+  --bs-btn-hover-bg: var(--vx-gold-300);
+  --bs-btn-hover-border-color: var(--vx-gold-500);
+  --bs-btn-active-color: var(--vx-crimson-850);
+  --bs-btn-active-bg: var(--vx-gold-400);
+  --bs-btn-active-border-color: var(--vx-gold-500);
+  --bs-btn-padding-x: 1.75rem;
+  --bs-btn-padding-y: .8rem;
+  --bs-btn-border-radius: var(--vx-radius);
+  box-shadow: var(--vx-shadow);
+  display: inline-flex; align-items: center; gap: .6rem;
+}
+.btn-vx-outline {
+  --bs-btn-font-weight: 600;
+  --bs-btn-font-size: .75rem;
+  --bs-btn-color: var(--vx-gold-150);
+  --bs-btn-bg: rgba(0, 0, 0, .25);
+  --bs-btn-border-color: rgba(252, 211, 77, .4);
+  --bs-btn-hover-color: var(--vx-crimson-850);
+  --bs-btn-hover-bg: var(--vx-gold-200);
+  --bs-btn-hover-border-color: var(--vx-gold-200);
+  --bs-btn-active-bg: var(--vx-gold-400);
+  --bs-btn-padding-y: .7rem;
+  --bs-btn-border-radius: var(--vx-radius-sm);
+  letter-spacing: .05em; text-transform: uppercase;
+}
+.btn-vx-circle {
+  width: var(--vx-circle-size, 40px); height: var(--vx-circle-size, 40px);
+  border-radius: 50%; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--vx-stone-300); background: var(--vx-white); color: var(--vx-stone-700);
+  box-shadow: var(--vx-shadow-sm); transition: all .2s ease;
+}
+.btn-vx-circle:hover { transform: translateY(-1px); box-shadow: var(--vx-shadow); }
+.btn-vx-circle--gold { background: var(--vx-gold-200); border-color: var(--vx-gold-200); color: var(--vx-crimson-850); }
+.btn-vx-circle:disabled { opacity: .45; transform: none; }
+
+/* ---------- 5. HEADER ---------- */
+.vx-header {
+  position: sticky; top: 0; z-index: 1030;
+  min-height: var(--vx-header-h);
+  background: var(--vx-crimson-800) var(--vx-bg-red-dark) center 18% / cover no-repeat;
+  border-bottom: 1px solid rgba(228, 197, 131, .18);
+}
+.vx-header .navbar { --bs-navbar-padding-y: 0; min-height: var(--vx-header-h); }
+.vx-brand { line-height: 1.2; text-decoration: none; }
+.vx-brand__title {
+  display: block; font-family: var(--vx-font-heading); font-weight: 700;
+  font-size: clamp(1.05rem, .9rem + .6vw, 1.45rem); letter-spacing: .02em; text-transform: uppercase;
+  color: var(--vx-gold-500);
+}
+.vx-brand__sub { display: block; font-family: var(--vx-font-heading); font-size: clamp(.85rem, .8rem + .3vw, 1.05rem); color: var(--vx-cream-100); }
+.vx-header .nav-link {
+  --bs-nav-link-color: var(--vx-white);
+  --bs-nav-link-hover-color: var(--vx-gold-300);
+  --bs-navbar-active-color: var(--vx-gold-300);
+  font-size: .95rem; font-weight: 500; position: relative;
+  padding: .5rem 0 !important; margin: 0 1.25rem;
+}
+.vx-header .nav-link.active { color: var(--vx-gold-300); }
+.vx-header .nav-link.active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: var(--vx-gold-300); border-radius: 2px;
+}
+.vx-header .navbar-toggler { border-color: var(--vx-gold-400); color: var(--vx-gold-300); }
+.vx-header .navbar-toggler:focus { box-shadow: 0 0 0 .2rem var(--bs-focus-ring-color); }
+
+/* ---------- 6. HERO ---------- */
+.vx-hero {
+  position: relative; min-height: clamp(360px, 38vw, 494px);
+  display: flex; align-items: flex-end;
+  background: var(--vx-crimson-900) var(--vx-hero-img) center / cover no-repeat;
+  overflow: hidden;
+}
+.vx-hero::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, .45) 100%);
+}
+.vx-hero__actions { position: relative; z-index: 1; padding-bottom: 2.25rem; }
+.vx-search {
+  display: flex; align-items: center; gap: .65rem;
+  min-height: 56px; padding: 0 1rem;
+  border: 1px solid rgba(255, 255, 255, .45); border-radius: var(--vx-radius);
+  background: rgba(40, 20, 10, .35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  color: var(--vx-white); width: min(100%, 430px);
+}
+.vx-search .form-control {
+  background: transparent; border: 0; color: var(--vx-white); padding: 0; font-size: 1rem; box-shadow: none;
+}
+.vx-search .form-control::placeholder { color: rgba(255, 255, 255, .85); }
+.vx-search:focus-within { border-color: var(--vx-gold-400); }
+
+/* ---------- 7. SECTIONS ---------- */
+.vx-section { position: relative; padding: var(--vx-section-py) 0; background-repeat: no-repeat; background-size: cover; background-position: center; }
+.vx-section--red-dark { background-color: var(--vx-crimson-800); background-image: var(--vx-bg-red-dark); border-top: 2px solid var(--vx-crimson-500); }
+.vx-section--red { background-color: var(--vx-crimson-600); background-image: var(--vx-bg-red); }
+.vx-section--cream { background-color: var(--vx-paper); background-image: var(--vx-bg-cream); }
+
+/* Section heading */
+.vx-head { text-align: center; margin-bottom: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.vx-eyebrow {
+  display: inline-flex; align-items: center; gap: .75rem;
+  font-family: var(--vx-font-body); font-weight: 600; font-size: var(--vx-fs-eyebrow);
+  letter-spacing: .1em; text-transform: uppercase; color: var(--vx-gold-800); margin-bottom: .35rem;
+}
+.vx-eyebrow::before, .vx-eyebrow::after { content: ""; width: 42px; height: 1.5px; background: var(--vx-gold-600); }
+.vx-title { font-weight: 700; font-size: var(--vx-fs-h2); color: var(--vx-crimson-800); margin: 0 0 .5rem; line-height: 1.15; }
+.vx-title--lined { display: inline-flex; align-items: center; gap: clamp(.75rem, 2vw, 1.75rem); font-size: var(--vx-fs-display); }
+.vx-title--lined::before, .vx-title--lined::after { content: ""; flex: 0 0 clamp(28px, 4vw, 48px); height: 2px; background: var(--vx-gold-line); }
+.vx-text-gradient {
+  background: var(--vx-gradient-gold-text); -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+}
+.vx-lead { font-size: 1rem; color: var(--vx-stone-600); margin: 0 auto; max-width: 672px; }
+.vx-head--dark .vx-eyebrow { color: var(--vx-gold-450); }
+.vx-head--dark .vx-title { color: var(--vx-gold-50); text-shadow: 0 1px 2px rgba(0, 0, 0, .15); }
+.vx-head--dark .vx-lead { color: rgba(254, 243, 199, .9); }
+.vx-head--serif-lead .vx-lead { font-family: var(--vx-font-heading); }
+
+/* ---------- 8. MAP ---------- */
+.vx-map-frame {
+  position: relative; border-radius: var(--vx-radius-xl); overflow: hidden;
+  border: 2px solid rgba(230, 202, 123, .4); box-shadow: var(--vx-shadow-xl);
+  background: #f2ece0;
+}
+.vx-map { height: clamp(460px, 50vw, 650px); width: 100%; background: #f2ece0; font-family: var(--vx-font-body); }
+.vx-map .leaflet-tile-pane { filter: sepia(.55) saturate(1.15) hue-rotate(-8deg) brightness(1.02) contrast(.95); }
+.vx-map.is-satellite .leaflet-tile-pane { filter: none; }
+.vx-map .leaflet-control-attribution { font-size: 9px; background: rgba(255, 255, 255, .8); }
+
+.vx-map-toolbar {
+  position: absolute; z-index: 800; top: 12px; left: 12px; right: 64px;
+  display: flex; flex-wrap: wrap; gap: 8px; pointer-events: none;
+}
+.vx-chip {
+  pointer-events: auto; display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: 999px; font-size: .75rem; font-weight: 500;
+  color: var(--vx-stone-700); background: rgba(255, 255, 255, .95);
+  border: 1px solid var(--vx-stone-200); box-shadow: var(--vx-shadow-sm); cursor: pointer; user-select: none;
+  white-space: nowrap;
+}
+.vx-chip .form-check-input { margin: 0; width: 14px; height: 14px; border-radius: 3px; border-color: #9ca3af; cursor: pointer; }
+.vx-chip .form-check-input:checked { background-color: var(--vx-crimson-400); border-color: var(--vx-crimson-400); }
+.vx-chip--solid { background: var(--vx-crimson-800); color: var(--vx-white); border-color: var(--vx-crimson-800); font-weight: 600; }
+.vx-chip--solid:hover { background: var(--vx-crimson-400); }
+
+.vx-map-layer-btn {
+  position: absolute; z-index: 800; top: 12px; right: 12px;
+  width: 40px; height: 40px; border-radius: var(--vx-radius);
+  background: rgba(255, 255, 255, .95); border: 1px solid var(--vx-stone-200); box-shadow: var(--vx-shadow-sm);
+  color: var(--vx-stone-500); display: grid; place-items: center;
+}
+.vx-map-layer-btn.is-active { color: var(--vx-crimson-400); }
+
+.vx-legend {
+  position: absolute; z-index: 800; right: 12px; bottom: 22px; width: 176px;
+  background: rgba(255, 255, 255, .95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--vx-stone-300); border-radius: var(--vx-radius); box-shadow: var(--vx-shadow-lg);
+  padding: 10px 12px; font-size: 11px; color: var(--vx-stone-700);
+}
+.vx-legend__title { font-weight: 700; font-size: 12px; color: var(--vx-stone-900); padding-bottom: 6px; margin-bottom: 6px; border-bottom: 1px solid var(--vx-stone-200); }
+.vx-legend ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.vx-legend li { display: flex; align-items: center; gap: 8px; }
+.vx-legend .sw { flex: 0 0 16px; display: inline-block; }
+.vx-legend .sw--dot { width: 14px; height: 14px; flex-basis: 14px; border-radius: 50%; margin: 0 1px; }
+.vx-legend .sw--line { height: 2px; }
+.vx-legend .sw--dash { height: 0; border-top: 2px dashed var(--vx-dist-far); }
+.vx-legend .sw--area { height: 8px; border: 1px dashed #b91c1c; background: rgba(254, 226, 226, .5); }
+
+/* Leaflet markers */
+.vx-marker__pin {
+  width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+  border: 3px solid var(--vx-white); outline: 2px solid var(--vx-crimson-700);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .35); background: var(--vx-crimson-700);
+  display: grid; place-items: center;
+}
+.vx-marker__pin img { width: 100%; height: 100%; object-fit: cover; object-position: center 70%; display: block; }
+.vx-marker__num {
+  position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%);
+  min-width: 16px; height: 16px; padding: 0 3px; border-radius: 999px;
+  background: var(--vx-crimson-700); color: var(--vx-white); border: 1.5px solid var(--vx-white);
+  font: 700 9px/13px var(--vx-font-body); text-align: center;
+}
+.vx-marker--plain .vx-marker__pin { border: 2px solid rgba(255, 255, 255, .25); outline: 0; background: var(--vx-crimson-850); color: var(--vx-white); font: 700 13px var(--vx-font-body); }
+.vx-marker:hover .vx-marker__pin { outline-color: var(--vx-gold-500); }
+.leaflet-tooltip.vx-label {
+  background: rgba(255, 255, 255, .92); border: 1px solid var(--vx-stone-300); color: var(--vx-stone-900);
+  font: 600 11px var(--vx-font-body); padding: 2px 6px; box-shadow: var(--vx-shadow-sm);
+}
+.leaflet-tooltip.vx-place {
+  background: transparent; border: 0; box-shadow: none; padding: 0;
+  font-family: var(--vx-font-body); font-weight: 700; color: var(--vx-stone-900); text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+}
+.leaflet-tooltip.vx-place::before { display: none; }
+.leaflet-popup-content-wrapper { border-radius: var(--vx-radius-lg); }
+.vx-popup { width: 200px; font-family: var(--vx-font-body); }
+.vx-popup img { width: 100%; height: 110px; object-fit: cover; border-radius: var(--vx-radius); margin-bottom: 6px; }
+.vx-popup h4 { font-size: 15px; margin: 0 0 2px; color: var(--vx-crimson-800); }
+.vx-popup small { color: var(--vx-stone-500); }
+
+/* ---------- 9. DISCOVER CAROUSEL ---------- */
+.vx-carousel { position: relative; }
+.vx-carousel__track {
+  --vx-card-gap: clamp(1rem, 4.2vw, 4rem);
+  --vx-card-per-view: 4;
+  display: flex; gap: var(--vx-card-gap); overflow-x: auto; scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; padding: .5rem .25rem 2rem; scrollbar-width: none;
+}
+.vx-carousel__track::-webkit-scrollbar { display: none; }
+.vx-carousel__item {
+  flex: 0 0 calc((100% - (var(--vx-card-per-view) - 1) * var(--vx-card-gap)) / var(--vx-card-per-view));
+  scroll-snap-align: start;
+}
+.vx-carousel__item:nth-child(even) { margin-top: 2.5rem; }
+.vx-carousel__nav { display: flex; justify-content: flex-end; gap: .75rem; }
+
+.vx-card {
+  position: relative; display: block; height: 100%; aspect-ratio: 3 / 4;
+  border-radius: var(--vx-radius-sm); overflow: hidden; box-shadow: var(--vx-shadow);
+  text-decoration: none; color: inherit; transition: transform .25s ease, box-shadow .25s ease;
+}
+.vx-card:hover { transform: translateY(-4px); box-shadow: var(--vx-shadow-lg); }
+.vx-card__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.vx-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0, 0, 0, .85) 0%, rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0) 55%); }
+.vx-card__title {
+  position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; margin: 0;
+  padding: .85rem 1rem; background: rgba(0, 0, 0, .4);
+  font-family: var(--vx-font-heading); font-weight: 700; font-size: var(--vx-fs-h3); letter-spacing: .025em;
+  color: var(--vx-white); text-align: center;
+}
+/* Info card (thẻ gấm đỏ) */
+.vx-card-info-wrap { padding: 8px; background: rgba(255, 255, 255, .55); border-radius: 2px; box-shadow: 0 2px 10px rgba(92, 14, 19, .08); height: 100%; }
+.vx-card-info {
+  position: relative; height: 100%; aspect-ratio: 3 / 4; display: flex; flex-direction: column; justify-content: center;
+  padding: 1.25rem 1.1rem; border-radius: 2px; overflow: hidden;
+  background: var(--vx-crimson-800) var(--vx-bg-red) 30% 40% / 420% auto no-repeat;
+  box-shadow: var(--vx-shadow); color: var(--vx-white);
+}
+.vx-card-info::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(107, 18, 25, .55), rgba(66, 6, 9, .55)); }
+.vx-card-info > * { position: relative; }
+.vx-card-info h3 { font-size: clamp(1.05rem, .95rem + .35vw, 1.3rem); font-weight: 700; color: var(--vx-white); margin-bottom: .9rem; line-height: 1.3; }
+.vx-card-info p { font-size: .8rem; line-height: 1.55; color: rgba(254, 243, 199, .9); margin-bottom: 1.2rem; }
+.vx-card-info .btn { align-self: flex-start; min-width: 72%; }
+
+/* ---------- 10. FESTIVAL CARDS ---------- */
+.vx-fest {
+  position: relative; display: block; aspect-ratio: 383 / 247; overflow: hidden; text-decoration: none;
+  padding: 5px; border-radius: 3px;
+  background: linear-gradient(135deg, var(--vx-gold-400), var(--vx-gold-700) 50%, var(--vx-gold-400));
+  box-shadow: var(--vx-shadow-lg);
+}
+.vx-fest__inner { position: relative; height: 100%; overflow: hidden; border: 1.5px solid rgba(255, 242, 198, .85); border-radius: 1px; }
+.vx-fest__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.vx-fest:hover .vx-fest__img { transform: scale(1.05); }
+.vx-fest__inner::after { content: ""; position: absolute; inset: auto 0 0 0; height: 55%; background: linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); }
+.vx-fest__bar {
+  position: absolute; z-index: 1; left: 0; right: 0; bottom: 0;
+  display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .9rem 1rem .9rem 1.25rem;
+}
+.vx-fest__title { margin: 0; font-family: var(--vx-font-heading); font-weight: 700; font-size: clamp(1.05rem, .95rem + .45vw, 1.35rem); color: var(--vx-white); letter-spacing: .02em; text-shadow: 0 2px 6px rgba(0, 0, 0, .5); }
+.vx-fest .btn-vx-circle { --vx-circle-size: 38px; flex: 0 0 auto; border-color: var(--vx-gold-200); }
+
+/* ---------- 11. FOOTER (nền hoa sen bám đáy) ---------- */
+.vx-footer {
+  position: relative; color: var(--vx-stone-300);
+  /* màu nền phía trên trùng tông ảnh -> ảnh luôn neo ở đáy, hoa sen 2 góc luôn hiển thị trên mọi màn */
+  background: var(--vx-bg-footer) center bottom / 100% auto no-repeat, linear-gradient(180deg, var(--vx-crimson-600) 0%, #5d070c 60%);
+  background-color: #5d070c;
+  min-height: 22vw; /* đủ cao để dải hoa sen (≈20% chiều rộng) luôn hiện trọn */
+  padding: clamp(2.5rem, 2rem + 2vw, 3.5rem) 0 1.25rem;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.vx-footer > .container { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.vx-footer__cols > [class*="col"] + [class*="col"] { border-left: 1px solid rgba(228, 197, 131, .35); }
+.vx-footer h4 { font-weight: 700; font-size: 1rem; letter-spacing: .05em; text-transform: uppercase; color: var(--vx-gold-500); margin-bottom: .65rem; }
+.vx-footer__brand h4 { font-size: 1.25rem; }
+.vx-footer__brand p { font-family: var(--vx-font-heading); color: var(--vx-gold-400); font-size: .9rem; }
+.vx-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-size: .875rem; }
+.vx-footer ul strong { color: var(--vx-white); font-weight: 500; }
+.vx-footer a { color: var(--vx-stone-300); text-decoration: none; }
+.vx-footer a:hover { color: var(--vx-gold-300); }
+.vx-footer__copy { font-family: var(--vx-font-heading); text-align: center; font-size: .875rem; letter-spacing: .02em; color: rgba(255, 255, 255, .9); margin-top: clamp(2rem, 4vw, 3.5rem); }
+
+/* ---------- 12. RESPONSIVE ---------- */
+@media (max-width: 1199.98px) {
+  .vx-header .nav-link { margin: 0 .85rem; }
+}
+@media (max-width: 991.98px) {
+  :root { --vx-header-h: 76px; }
+  .vx-header .navbar-collapse { padding: .5rem 0 1rem; }
+  .vx-header .nav-link { margin: 0; display: inline-block; }
+  .vx-carousel__track { --vx-card-per-view: 2.4; }
+  .vx-legend { display: none; }
+  .vx-legend.is-open { display: block; }
+}
+@media (max-width: 767.98px) {
+  .vx-carousel__track { --vx-card-per-view: 1.6; }
+  .vx-carousel__item:nth-child(even) { margin-top: 1.5rem; }
+  .vx-footer__cols > [class*="col"] + [class*="col"] { border-left: 0; border-top: 1px solid rgba(228, 197, 131, .3); padding-top: 1.25rem; }
+  .vx-map-toolbar { right: 60px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; pointer-events: auto; padding-bottom: 4px; }
+  .vx-map-toolbar::-webkit-scrollbar { display: none; }
+  .vx-chip { flex: 0 0 auto; }
+  /* Footer mobile: tách 2 nửa ảnh để cụm hoa sen 2 góc luôn đủ lớn & không bị cắt */
+  .vx-footer { background: linear-gradient(180deg, var(--vx-crimson-600) 0%, #5d070c 45%); padding-bottom: 9rem; }
+  .vx-footer::before, .vx-footer::after {
+    content: ""; position: absolute; bottom: 0; width: 50%; height: 100%; pointer-events: none;
+    background-image: var(--vx-bg-footer); background-repeat: no-repeat; background-size: auto var(--vx-lotus-h, 380px);
+    -webkit-mask-image: linear-gradient(var(--vx-mask-dir), #000 55%, transparent 100%);
+    mask-image: linear-gradient(var(--vx-mask-dir), #000 55%, transparent 100%);
+  }
+  .vx-footer::before { left: 0; background-position: left bottom; --vx-mask-dir: 90deg; }
+  .vx-footer::after { right: 0; background-position: right bottom; --vx-mask-dir: 270deg; }
+  .vx-footer > .container { position: relative; z-index: 1; }
+  .vx-chip { font-size: .7rem; padding: 5px 10px; }
+  .vx-hero__actions .btn-vx-gold { width: 100%; justify-content: center; }
+  .vx-search { width: 100%; }
+}
+@media (max-width: 575.98px) {
+  .vx-carousel__track { --vx-card-per-view: 1.25; }
+  .vx-title--lined::before, .vx-title--lined::after { flex-basis: 20px; }
+}

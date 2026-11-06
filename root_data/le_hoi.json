@@ -1,0 +1,441 @@
+[
+  {
+    "id": "le_hoi_01",
+    "stt": 1,
+    "name": "Hội làng Thù Lâm (Chính hội)",
+    "sites": [
+      "dinh_thu_lam"
+    ],
+    "sitesText": "Đình Thù Lâm",
+    "place": "TDP Thù Lâm, phường Vạn Xuân (xã Tiên Phong trước hợp nhất)",
+    "lunarTime": "Mùng 6 tháng Giêng",
+    "solarTime": "Khoảng tháng 2 dương lịch hàng năm",
+    "worship": "Danh tướng Dương Tự Minh (Thủ lĩnh phủ Phú Lương)",
+    "rituals": "Nghi thức dâng hương, tế lễ Thành hoàng, tấu sớ cầu an",
+    "activities": "Đấu vật cổ truyền, thi cờ tướng, trò chơi dân gian, hát dân ca, tập dưỡng sinh người cao tuổi",
+    "source": "Báo Thái Nguyên (15/01/2015)",
+    "sourceType": "Bài viết báo chí có ảnh & Video YouTube",
+    "article": {
+      "url": "https://baothainguyen.vn/van-hoa/201501/net-truyen-thong-o-thu-lam-367A381",
+      "label": "Đọc bài viết"
+    },
+    "video": {
+      "url": "https://www.youtube.com/watch?v=Y5pciloaw9c",
+      "label": "Xem video"
+    },
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Thu_Lam_01/Hoi_lang_Thu_Lam_01_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Thu_Lam_01/Hoi_lang_Thu_Lam_01_01.jpg",
+        "assets/img/le_hoi/Hoi_lang_Thu_Lam_01/Hoi_lang_Thu_Lam_01_02.jpg",
+        "assets/img/le_hoi/Hoi_lang_Thu_Lam_01/Hoi_lang_Thu_Lam_01_03.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Thu_Lam_01"
+    }
+  },
+  {
+    "id": "le_hoi_02",
+    "stt": 2,
+    "name": "Lễ rước Thánh kinh lý & Mừng cơm mới Thù Lâm",
+    "sites": [
+      "dinh_thu_lam"
+    ],
+    "sitesText": "Đình Thù Lâm",
+    "place": "TDP Thù Lâm, phường Vạn Xuân",
+    "lunarTime": "Ngày 10 tháng 10 âm lịch",
+    "solarTime": "Khoảng tháng 11 dương lịch hàng năm",
+    "worship": "Thành hoàng làng Dương Tự Minh",
+    "rituals": "Rước kiệu Thánh kinh lý quanh làng, tế tạ ơn Thành hoàng, dâng lễ cơm mới",
+    "activities": "Mừng cơm mới mùa gặt, liên hoan cộng đồng họ tộc, cầu mưa thuận gió hòa",
+    "source": "Báo Thái Nguyên (15/01/2015)",
+    "sourceType": "Bài viết báo chí",
+    "article": {
+      "url": "https://baothainguyen.vn/van-hoa/201501/net-truyen-thong-o-thu-lam-367A381",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Le_ruoc_com_moi_Thu_Lam_02/Le_ruoc_com_moi_Thu_Lam_02_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Le_ruoc_com_moi_Thu_Lam_02/Le_ruoc_com_moi_Thu_Lam_02_01.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Le_ruoc_com_moi_Thu_Lam_02"
+    }
+  },
+  {
+    "id": "le_hoi_03",
+    "stt": 3,
+    "name": "Lễ hội chùa Đôi Cao (Chùa Đồi Cao)",
+    "sites": [
+      "chua_doi_cao"
+    ],
+    "sitesText": "Chùa Đồi Cao (Đôi Cao)",
+    "place": "TDP Đồi Cao, phường Vạn Xuân (xã Tân Hương trước hợp nhất)",
+    "lunarTime": "Ngày 14 - 15 tháng Giêng",
+    "solarTime": "Dịp rằm tháng Giêng",
+    "worship": "Tam Bảo (Phật giáo) và thờ Mẫu",
+    "rituals": "Khóa lễ cầu an đầu năm, tụng kinh Dược Sư, dâng hương tam bảo",
+    "activities": "Đấu vật, cờ tướng, chọi gà, giao lưu văn nghệ quần chúng, du xuân vãn cảnh chùa trên đồi",
+    "source": "Báo Thái Nguyên (16/02/2011)",
+    "sourceType": "Bài viết báo chí có ảnh & Video du lịch tâm linh",
+    "article": {
+      "url": "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C",
+      "label": "Đọc bài viết"
+    },
+    "video": {
+      "url": "https://www.youtube.com/watch?v=SRBfrHQzqHA",
+      "label": "Xem video"
+    },
+    "media": {
+      "cover": "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_01.jpg",
+        "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_02.jpg",
+        "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_03.jpg",
+        "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_04.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03"
+    }
+  },
+  {
+    "id": "le_hoi_04",
+    "stt": 4,
+    "name": "Hội làng Giã Thù & Sới vật đầu xuân",
+    "sites": [
+      "dinh_gia_thu",
+      "chua_di"
+    ],
+    "sitesText": "Đình Giã Thù & Chùa Di (Cổ Di)",
+    "place": "TDP Giã Thù, phường Vạn Xuân (xã Tiên Phong trước hợp nhất)",
+    "lunarTime": "Mùng 4 - mùng 6 tháng Giêng",
+    "solarTime": "Đầu xuân Tết Nguyên đán",
+    "worship": "Danh tướng Dương Tự Minh & Chư Phật (Chùa Di)",
+    "rituals": "Dâng nông sản quê hương, tế Thành hoàng làng, lễ Phật cầu phúc",
+    "activities": "Giải đấu vật truyền thống tại sới vật trước cửa đình, kéo co, leo cột mỡ, giao lưu văn nghệ",
+    "source": "Báo Thái Nguyên (18/09/2022)",
+    "sourceType": "Phóng sự báo chí có ảnh chụp sới vật thực tế",
+    "article": {
+      "url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/202209/net-dep-lang-co-ven-de-5295447",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_01.jpg",
+        "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_02.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Gia_Thu_04"
+    }
+  },
+  {
+    "id": "le_hoi_05",
+    "stt": 5,
+    "name": "Hội làng Phúc Duyên (Lễ hội đình Phúc Duyên)",
+    "sites": [
+      "dinh_phuc_duyen"
+    ],
+    "sitesText": "Đình Phúc Duyên",
+    "place": "TDP Phúc Duyên, phường Vạn Xuân (xã Tân Hương trước hợp nhất)",
+    "lunarTime": "Đầu xuân (tháng Giêng)",
+    "solarTime": "Tháng Giêng âm lịch",
+    "worship": "Đức Thánh Tam Giang",
+    "rituals": "Khai hội bằng trống cái làng, dâng lễ tế Thành hoàng, cầu mùa",
+    "activities": "Kéo co, thi đấu vật, thi đấu cầu lông, bóng đá mini, sinh hoạt văn hóa dân gian",
+    "source": "Báo Thái Nguyên (08/08/2020)",
+    "sourceType": "Bài viết chuyên đề có ảnh di tích",
+    "article": {
+      "url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_01.jpg",
+        "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_02.jpg",
+        "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_03.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05"
+    }
+  },
+  {
+    "id": "le_hoi_06",
+    "stt": 6,
+    "name": "Lễ giỗ trận tưởng niệm Tiến sĩ Nguyễn Cấu",
+    "sites": [
+      "khu_luu_niem_ts_nguyen_cau"
+    ],
+    "sitesText": "Khu Lưu niệm Tiến sĩ Nguyễn Cấu",
+    "place": "TDP Thanh Thù / Phong Niên, phường Vạn Xuân",
+    "lunarTime": "Mùng 7 tháng 3 âm lịch",
+    "solarTime": "Khoảng tháng 4 dương lịch",
+    "worship": "Tiến sĩ Nguyễn Cấu (khoa bảng 1463, hy sinh bảo vệ triều Lê năm 1522)",
+    "rituals": "Tế tự tưởng niệm danh nhân khoa bảng, dâng hương tại đền thờ và mộ đá ong",
+    "activities": "Lễ tuyên dương khuyến học khuyến tài, phát thưởng con cháu hiếu học, ôn lại lịch sử",
+    "source": "Báo Thái Nguyên (2017)",
+    "sourceType": "Bài viết danh nhân có ảnh lăng mộ",
+    "article": {
+      "url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/201706/tien-si-nguyen-cau-3675627/",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06/Gio_tran_TS_Nguyen_Cau_06_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06/Gio_tran_TS_Nguyen_Cau_06_01.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06"
+    }
+  },
+  {
+    "id": "le_hoi_07",
+    "stt": 7,
+    "name": "Hội làng Xuân Trù (Lễ hội Đình - Chùa Xuân Trù)",
+    "sites": [
+      "dinh_xuan_tru",
+      "chua_xuan_tru"
+    ],
+    "sitesText": "Đình Xuân Trù & Chùa Xuân Trù",
+    "place": "TDP Xuân Trù, phường Vạn Xuân (xã Tiên Phong trước hợp nhất)",
+    "lunarTime": "Mùng 6 - mùng 8 tháng Giêng",
+    "solarTime": "Đầu xuân Tết Nguyên đán",
+    "worship": "Cao Sơn, Quý Minh, Tam Ty Quá Giang & Chư Phật",
+    "rituals": "Tế thần theo thần tích truyền thống, rước lễ vật, dâng hương chùa",
+    "activities": "Kéo co, cờ tướng, chọi gà, các trò chơi dân gian mừng hội làng",
+    "source": "Báo Thái Nguyên & Viện Hán Nôm",
+    "sourceType": "Khảo sát di sản Hán Nôm & Báo chí",
+    "article": {
+      "url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/202209/net-dep-lang-co-ven-de-5295447",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Xuan_Tru_07/Hoi_lang_Xuan_Tru_07_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Xuan_Tru_07/Hoi_lang_Xuan_Tru_07_01.jpg",
+        "assets/img/le_hoi/Hoi_lang_Xuan_Tru_07/Hoi_lang_Xuan_Tru_07_02.jpg",
+        "assets/img/le_hoi/Hoi_lang_Xuan_Tru_07/Hoi_lang_Xuan_Tru_07_03.jpg",
+        "assets/img/le_hoi/Hoi_lang_Xuan_Tru_07/Hoi_lang_Xuan_Tru_07_04.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Xuan_Tru_07"
+    }
+  },
+  {
+    "id": "le_hoi_08",
+    "stt": 8,
+    "name": "Hội làng Phù Hương",
+    "sites": [
+      "dinh_phu_huong"
+    ],
+    "sitesText": "Đình Phù Hương",
+    "place": "TDP Phù Hương, phường Vạn Xuân (xã Tân Hương trước hợp nhất)",
+    "lunarTime": "Mùng 8 - mùng 10 tháng Giêng",
+    "solarTime": "Đầu xuân Tết Nguyên đán",
+    "worship": "Thần Tam Giang",
+    "rituals": "Tế lễ thành hoàng, đọc văn tế cầu quốc thái dân an, mùa màng bội thu",
+    "activities": "Giao lưu thể thao, trò chơi dân gian, liên hoan văn nghệ quần chúng xóm làng",
+    "source": "Viện Nghiên cứu Hán Nôm (2009)",
+    "sourceType": "Tư liệu khảo sát văn khắc, sắc phong",
+    "article": {
+      "url": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": null,
+      "gallery": [],
+      "folder": "assets/img/le_hoi/Hoi_lang_Phu_Huong_08"
+    }
+  },
+  {
+    "id": "le_hoi_09",
+    "stt": 9,
+    "name": "Hội làng Yên Trung",
+    "sites": [
+      "dinh_yen_trung"
+    ],
+    "sitesText": "Đình Yên Trung",
+    "place": "TDP Yên Trung 1, phường Vạn Xuân (xã Tiên Phong trước hợp nhất)",
+    "lunarTime": "Mùng 6 - mùng 8 tháng Giêng",
+    "solarTime": "Đầu xuân Tết Nguyên đán",
+    "worship": "Danh tướng Dương Tự Minh",
+    "rituals": "Tế Thành hoàng làng, tấu chúc văn tri ân tiền nhân",
+    "activities": "Giao lưu thể thao dân gian, thi đấu bóng chuyền hơi, dâng lễ vật địa phương",
+    "source": "Báo Thái Nguyên (18/09/2022)",
+    "sourceType": "Phóng sự báo chí",
+    "article": {
+      "url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/202209/net-dep-lang-co-ven-de-5295447",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": null,
+      "gallery": [],
+      "folder": "assets/img/le_hoi/Hoi_lang_Yen_Trung_09"
+    }
+  },
+  {
+    "id": "le_hoi_10",
+    "stt": 10,
+    "name": "Hội làng Nguyễn Hậu (Lễ hội Đình - Chùa Nguyễn Hậu)",
+    "sites": [
+      "dinh_nguyen_hau",
+      "chua_nguyen_hau"
+    ],
+    "sitesText": "Đình Nguyễn Hậu & Chùa Nguyễn Hậu",
+    "place": "TDP Nguyễn Hậu, phường Vạn Xuân (xã Tiên Phong trước hợp nhất)",
+    "lunarTime": "Mùng 6 - mùng 8 tháng Giêng",
+    "solarTime": "Đầu xuân Tết Nguyên đán",
+    "worship": "Dương Tự Minh, Diên Bình công chúa & Chư Phật",
+    "rituals": "Rước kiệu, tế lễ Thành hoàng tại đình, dâng hương cầu an tại chùa Nguyễn Hậu",
+    "activities": "Giao lưu văn nghệ, thi đấu cờ tướng, sinh hoạt cộng đồng làng cổ ven sông Cầu",
+    "source": "Báo Thái Nguyên (20/02/2013)",
+    "sourceType": "Bài viết báo chí có ảnh",
+    "article": {
+      "url": "https://baothainguyen.vn/van-hoa/201302/dinh-chua-lang-nguyen-hau-don-nhan-bang-di-tich-lich-su-van-hoa-cap-tinh-3673824",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Nguyen_Hau_10/Hoi_lang_Nguyen_Hau_10_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Nguyen_Hau_10/Hoi_lang_Nguyen_Hau_10_01.jpg",
+        "assets/img/le_hoi/Hoi_lang_Nguyen_Hau_10/Hoi_lang_Nguyen_Hau_10_02.jpg",
+        "assets/img/le_hoi/Hoi_lang_Nguyen_Hau_10/Hoi_lang_Nguyen_Hau_10_03.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Nguyen_Hau_10"
+    }
+  },
+  {
+    "id": "le_hoi_11",
+    "stt": 11,
+    "name": "Hội làng Giã Trung (Lễ hội Đình - Chùa Giã Trung)",
+    "sites": [
+      "dinh_gia_trung",
+      "chua_gia_trung"
+    ],
+    "sitesText": "Đình Giã Trung & Chùa Giã Trung",
+    "place": "TDP Giã Trung, phường Vạn Xuân (xã Tiên Phong trước hợp nhất)",
+    "lunarTime": "Mùng 6 tháng Giêng",
+    "solarTime": "Đầu xuân Tết Nguyên đán",
+    "worship": "Danh tướng Dương Tự Minh & Chư Phật",
+    "rituals": "Dâng hương, tế lễ Thành hoàng, cầu an đầu năm tại chùa",
+    "activities": "Thi leo cột mỡ, kéo co, bóng chuyền hơi, các trò chơi truyền thống",
+    "source": "Cổng tra cứu di sản Tracuudi",
+    "sourceType": "Cổng thông tin số hóa lễ hội",
+    "article": {
+      "url": "https://tracuudi.vn/le-hoi/le-hoi-lang-gia-trung-xa-tien-phong",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Gia_Trung_11/Hoi_lang_Gia_Trung_11_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Gia_Trung_11/Hoi_lang_Gia_Trung_11_01.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Gia_Trung_11"
+    }
+  },
+  {
+    "id": "le_hoi_12",
+    "stt": 12,
+    "name": "Hội làng Thanh Thù",
+    "sites": [
+      "dinh_thanh_thu"
+    ],
+    "sitesText": "Đình Thanh Thù",
+    "place": "TDP Thanh Thù, phường Vạn Xuân (xã Đồng Tiến trước hợp nhất)",
+    "lunarTime": "Rằm tháng Giêng (15 tháng Giêng)",
+    "solarTime": "Dịp rằm tháng Giêng",
+    "worship": "Đức Thánh Tam Giang",
+    "rituals": "Tế lễ thành hoàng, dâng hương tưởng niệm danh nhân quê hương",
+    "activities": "Giao lưu văn nghệ, thể thao quần chúng, tôn vinh truyền thống khoa bảng",
+    "source": "Viện Nghiên cứu Hán Nôm",
+    "sourceType": "Hồ sơ khảo sát Hán Nôm",
+    "article": {
+      "url": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Hoi_lang_Thanh_Thu_12/Hoi_lang_Thanh_Thu_12_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Hoi_lang_Thanh_Thu_12/Hoi_lang_Thanh_Thu_12_01.jpg",
+        "assets/img/le_hoi/Hoi_lang_Thanh_Thu_12/Hoi_lang_Thanh_Thu_12_02.jpg",
+        "assets/img/le_hoi/Hoi_lang_Thanh_Thu_12/Hoi_lang_Thanh_Thu_12_03.jpg",
+        "assets/img/le_hoi/Hoi_lang_Thanh_Thu_12/Hoi_lang_Thanh_Thu_12_04.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Hoi_lang_Thanh_Thu_12"
+    }
+  },
+  {
+    "id": "le_hoi_13",
+    "stt": 13,
+    "name": "Lễ hội đình Thanh Quang",
+    "sites": [
+      "dinh_thanh_quang"
+    ],
+    "sitesText": "Đình Thanh Quang",
+    "place": "TDP Thanh Quang, phường Vạn Xuân (xã Đồng Tiến trước hợp nhất)",
+    "lunarTime": "Mùng 10 đến rằm tháng Giêng",
+    "solarTime": "Tháng Giêng âm lịch",
+    "worship": "Thành hoàng đình làng",
+    "rituals": "Tế Thành hoàng, dâng hương chúc xuân",
+    "activities": "Sinh hoạt lễ hội đầu xuân dưới tán đồi thông, thi đấu thể thao dân gian",
+    "source": "Báo Thái Nguyên (13/03/2017)",
+    "sourceType": "Bài viết báo chí có ảnh",
+    "article": {
+      "url": "https://baothainguyen.vn/van-hoa/201703/don-bang-di-tich-lich-su-cap-cap-tinh-dinh-thanh-quang-367B10C/",
+      "label": "Đọc bài viết"
+    },
+    "video": null,
+    "media": {
+      "cover": "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_01.jpg",
+        "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_02.jpg",
+        "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_03.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13"
+    }
+  },
+  {
+    "id": "le_hoi_14",
+    "stt": 14,
+    "name": "Lễ Thượng nguyên Chùa Mãn Tăng & Kết nối Lễ hội Vạn Xuân khai quốc",
+    "sites": [
+      "chua_man_tang"
+    ],
+    "sitesText": "Chùa Mãn Tăng",
+    "place": "TDP Cổ Pháp, phường Vạn Xuân",
+    "lunarTime": "Rằm tháng Giêng & Ngày 11 - 12 tháng Giêng",
+    "solarTime": "Tháng 2 - tháng 3 dương lịch",
+    "worship": "Chư Phật & Tưởng niệm Hoàng đế Lý Nam Đế",
+    "rituals": "Khóa lễ Thượng nguyên tại chùa, dâng hương tưởng niệm Lý Bí tại quần thể Cổ Pháp",
+    "activities": "Vở chèo Nam Việt Đế, thi đấu vật cổ truyền, võ thuật, cờ tướng, triển lãm OCOP",
+    "source": "Báo Đại biểu Nhân dân & YouTube",
+    "sourceType": "Phóng sự báo chí có ảnh & Video truyền hình",
+    "article": {
+      "url": "https://daibieunhandan.vn/thai-nguyen-khai-mac-le-hoi-van-xuan-khai-quoc-10408002.html",
+      "label": "Đọc bài viết"
+    },
+    "video": {
+      "url": "https://www.youtube.com/watch?v=1poiXRqN9yc",
+      "label": "Xem video"
+    },
+    "media": {
+      "cover": "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_01.jpg",
+      "gallery": [
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_01.jpg",
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_02.jpg",
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_03.jpg",
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_04.jpg",
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_05.jpg",
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_06.jpg",
+        "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14/Le_hoi_Man_Tang_Van_Xuan_14_07.jpg"
+      ],
+      "folder": "assets/img/le_hoi/Le_hoi_Man_Tang_Van_Xuan_14"
+    }
+  }
+]
