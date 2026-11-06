@@ -1,0 +1,95 @@
+{
+  "title": "VR360 Virtual Tour",
+  "imageResize": {
+    "presetId": "standard",
+    "maxWidth": 8192,
+    "quality": 0.92
+  },
+  "transition": {
+    "enabled": true,
+    "rotation": true,
+    "effect": "fade",
+    "duration": 1200,
+    "speed": 10
+  },
+  "scenes": [
+    {
+      "id": "dji_20261027155948_0716_d",
+      "name": "Trên cao",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261027155948_0716_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261027155948_0716_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.907704499999998,
+        "lng": 105.64109352777778,
+        "heading": null,
+        "altitude": 153.905
+      },
+      "initialView": {
+        "lon": 83.6,
+        "lat": -40.1,
+        "fov": 120
+      },
+      "autoTour": 1,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "landmark_mw4p342o_5lajp",
+          "lat": -75.7,
+          "lon": 97.2,
+          "icon": null,
+          "type": "point_landmark",
+          "label": "UBND xã Định Hóa",
+          "locked": false,
+          "target": "",
+          "loai_poi": null,
+          "entryView": null,
+          "interaction": "navigate",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          },
+          "pointKind": "point_landmark"
+        }
+      ]
+    },
+    {
+      "id": "dji_20261027160430_0722_d",
+      "name": "UBND xã Định Hóa",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261027160430_0722_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261027160430_0722_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.907968944444445,
+        "lng": 105.64110041666667,
+        "heading": null,
+        "altitude": 73.891
+      },
+      "initialView": {
+        "lon": 177.4,
+        "lat": 3.5,
+        "fov": 75
+      },
+      "autoTour": 1,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": []
+    }
+  ]
+}
