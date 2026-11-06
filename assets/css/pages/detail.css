@@ -10,6 +10,8 @@
   --d-crimson-card: #5d1316;
   --d-gallery-a: #5a0f13;
   --d-gallery-b: #73181c;
+  /* Dải đỏ theo thiết kế: tối hai bên – sáng ở giữa (linear ngang) */
+  --d-red-band: linear-gradient(90deg, #5f1016 0%, #71181c 50%, #5f1016 100%);
   --d-gold: #e7b16a;
   --d-gold-soft: #f5d38a;
   --d-brown: #9a5b2e;
@@ -18,8 +20,8 @@
   --d-muted: #78716c;
   --d-line: #e7e2d8;
   --d-green: #2f6b4f;
-  --d-serif: "Playfair Display", "Lora", Georgia, serif;
-  --d-sans: "Be Vietnam Pro", "Montserrat", system-ui, sans-serif;
+  --d-serif: var(--vx-font-heading); /* font lấy từ theme.css */
+  --d-sans: var(--vx-font-body);
   --d-wrap: 1240px;
 
   background: var(--d-bg);
@@ -100,7 +102,7 @@
 
 /* Sidebar */
 .vxd-aside { background: #fff; border-radius: 8px; padding: 24px; position: sticky; top: 16px; }
-.vxd-visit { background: var(--d-crimson-card); color: #fff; border-radius: 8px; padding: 26px 30px 24px; }
+.vxd-visit { background: var(--d-red-band); color: #fff; border-radius: 8px; padding: 26px 30px 24px; }
 .vxd-visit h3 { font: 600 14px/1 var(--d-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--d-gold); margin: 0 0 22px; }
 .vxd-visit ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
 .vxd-visit li { display: flex; gap: 14px; }
@@ -156,7 +158,7 @@
 .vxd-pin__dot { position: absolute; left: 50%; bottom: 0; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--d-crimson-2); border: 2px solid #fff; }
 
 /* ---------- GALLERY ---------- */
-.vxd-gallery { background: radial-gradient(120% 90% at 50% 50%, var(--d-gallery-b) 0%, var(--d-gallery-a) 100%); color: #fff; padding: 56px 0 64px; text-align: center; }
+.vxd-gallery { background: var(--d-red-band); color: #fff; padding: 56px 0 64px; text-align: center; }
 .vxd-gallery .vxd-eyebrow { color: var(--d-gold); }
 .vxd-gallery .vxd-h2 { color: #fff; }
 .vxd-gallery__lead { color: rgba(255, 255, 255, .85); margin: 0 0 40px; }

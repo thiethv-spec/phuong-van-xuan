@@ -40,6 +40,10 @@ Sửa Excel hoặc thêm ảnh, rồi chạy:
 
 ```
 python tools/build_data.py
+python tools/build_map_data.py   # sinh root_data/map/map-data.js(.json) cho trang Bản đồ số
+python tools/build_vr360.py      # sinh root_data/vr360/vr360-sites.js; tour từng di tích: root_data/vr360/tours/<id>.json
 ```
+
+Ranh giới phường cho bản đồ số: `root_data/map/boundary_osm.geojson` (OpenStreetMap relation 19523082, © OpenStreetMap contributors, ODbL).
 
 Script tự quét ảnh (bỏ qua `.HEIC`), đối chiếu toạ độ và in cảnh báo thiếu ảnh.

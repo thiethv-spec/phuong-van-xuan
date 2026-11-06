@@ -74,8 +74,8 @@
     "lunarTime": "Ngày 14 - 15 tháng Giêng",
     "solarTime": "Dịp rằm tháng Giêng",
     "worship": "Tam Bảo (Phật giáo) và thờ Mẫu",
-    "rituals": "Khóa lễ cầu an đầu năm, tụng kinh Dược Sư, dâng hương tam bảo",
-    "activities": "Đấu vật, cờ tướng, chọi gà, giao lưu văn nghệ quần chúng, du xuân vãn cảnh chùa trên đồi",
+    "rituals": "Dâng hương, cầu cho năm mới an lành, mưa thuận gió hòa, vạn vật tốt tươi",
+    "activities": "Đấu vật, cờ tướng, chọi gà, giao lưu văn hóa văn nghệ",
     "source": "Báo Thái Nguyên (16/02/2011)",
     "sourceType": "Bài viết báo chí có ảnh & Video du lịch tâm linh",
     "article": {
@@ -95,7 +95,25 @@
         "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_04.jpg"
       ],
       "folder": "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03"
-    }
+    },
+    "corrections": [
+      {
+        "field": "lunarTime",
+        "status": "đúng",
+        "note": "Ngày 14–15 tháng Giêng.",
+        "sources": [
+          "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"
+        ]
+      },
+      {
+        "field": "rituals",
+        "status": "sửa",
+        "note": "Bỏ “tụng kinh Dược Sư” – không có nguồn.",
+        "sources": [
+          "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"
+        ]
+      }
+    ]
   },
   {
     "id": "le_hoi_04",
@@ -120,12 +138,9 @@
     },
     "video": null,
     "media": {
-      "cover": "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_01.jpg",
-      "gallery": [
-        "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_01.jpg",
-        "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_02.jpg"
-      ],
-      "folder": "assets/img/le_hoi/Hoi_lang_Gia_Thu_04"
+      "cover": null,
+      "gallery": [],
+      "folder": null
     }
   },
   {
@@ -140,8 +155,8 @@
     "lunarTime": "Đầu xuân (tháng Giêng)",
     "solarTime": "Tháng Giêng âm lịch",
     "worship": "Đức Thánh Tam Giang",
-    "rituals": "Khai hội bằng trống cái làng, dâng lễ tế Thành hoàng, cầu mùa",
-    "activities": "Kéo co, thi đấu vật, thi đấu cầu lông, bóng đá mini, sinh hoạt văn hóa dân gian",
+    "rituals": "Tế lễ tại đình, dùng trống cái làng làm hiệu lệnh",
+    "activities": "Kéo co, đấu vật, thi đấu cầu lông, bóng đá mini",
     "source": "Báo Thái Nguyên (08/08/2020)",
     "sourceType": "Bài viết chuyên đề có ảnh di tích",
     "article": {
@@ -150,14 +165,28 @@
     },
     "video": null,
     "media": {
-      "cover": "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_01.jpg",
-      "gallery": [
-        "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_01.jpg",
-        "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_02.jpg",
-        "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_03.jpg"
-      ],
-      "folder": "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05"
-    }
+      "cover": null,
+      "gallery": [],
+      "folder": null
+    },
+    "corrections": [
+      {
+        "field": "lunarTime",
+        "status": "đúng",
+        "note": "Các lễ (khai xuân, vào hạ, lễ hội mùa) nay gộp làm một, tổ chức dịp đầu năm; không có ngày cụ thể.",
+        "sources": [
+          "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+        ]
+      },
+      {
+        "field": "rituals",
+        "status": "sửa",
+        "note": "“Khai hội bằng trống cái, tế Thành hoàng, cầu mùa” không có trong nguồn; chỉ giữ chi tiết trống cái dùng khi tế lễ.",
+        "sources": [
+          "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+        ]
+      }
+    ]
   },
   {
     "id": "le_hoi_06",
@@ -181,11 +210,9 @@
     },
     "video": null,
     "media": {
-      "cover": "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06/Gio_tran_TS_Nguyen_Cau_06_01.jpg",
-      "gallery": [
-        "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06/Gio_tran_TS_Nguyen_Cau_06_01.jpg"
-      ],
-      "folder": "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06"
+      "cover": null,
+      "gallery": [],
+      "folder": null
     }
   },
   {
@@ -235,7 +262,7 @@
     "worship": "Thần Tam Giang",
     "rituals": "Tế lễ thành hoàng, đọc văn tế cầu quốc thái dân an, mùa màng bội thu",
     "activities": "Giao lưu thể thao, trò chơi dân gian, liên hoan văn nghệ quần chúng xóm làng",
-    "source": "Viện Nghiên cứu Hán Nôm (2009)",
+    "source": "Chưa có nguồn công khai về lễ hội (nguồn Viện Hán Nôm 2009 trong Excel chỉ thống kê văn khắc)",
     "sourceType": "Tư liệu khảo sát văn khắc, sắc phong",
     "article": {
       "url": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608",
@@ -245,8 +272,17 @@
     "media": {
       "cover": null,
       "gallery": [],
-      "folder": "assets/img/le_hoi/Hoi_lang_Phu_Huong_08"
-    }
+      "folder": null
+    },
+    "unverified": true,
+    "corrections": [
+      {
+        "field": "lunarTime / rituals / activities",
+        "status": "chưa xác minh",
+        "note": "Không tìm thấy nguồn nào về hội làng Phù Hương; cần xác minh tại địa phương.",
+        "sources": []
+      }
+    ]
   },
   {
     "id": "le_hoi_09",
@@ -272,7 +308,7 @@
     "media": {
       "cover": null,
       "gallery": [],
-      "folder": "assets/img/le_hoi/Hoi_lang_Yen_Trung_09"
+      "folder": null
     }
   },
   {
@@ -391,13 +427,9 @@
     },
     "video": null,
     "media": {
-      "cover": "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_01.jpg",
-      "gallery": [
-        "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_01.jpg",
-        "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_02.jpg",
-        "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_03.jpg"
-      ],
-      "folder": "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13"
+      "cover": null,
+      "gallery": [],
+      "folder": null
     }
   },
   {

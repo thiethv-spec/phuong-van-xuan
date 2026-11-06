@@ -3,7 +3,7 @@ window.VX_DB = {
   "meta": {
     "title": "Di tích lịch sử – Phường Vạn Xuân, Tỉnh Thái Nguyên",
     "source": "Danh_sach_17_di_tich_phuong_Van_Xuan.xlsx",
-    "generatedAt": "2026-11-06T13:34:04",
+    "generatedAt": "2026-11-06T19:04:49",
     "counts": {
       "sites": 17,
       "festivals": 14
@@ -126,7 +126,11 @@ window.VX_DB = {
         "avatar": null,
         "cover": "assets/img/dia_diem/dinh_thu_lam/1.jpg",
         "gallery": [
-          "assets/img/dia_diem/dinh_thu_lam/1.jpg"
+          "assets/img/dia_diem/dinh_thu_lam/1.jpg",
+          "assets/img/dia_diem/dinh_thu_lam/1.png",
+          "assets/img/dia_diem/dinh_thu_lam/2.png",
+          "assets/img/dia_diem/dinh_thu_lam/3.png",
+          "assets/img/dia_diem/dinh_thu_lam/4.png"
         ]
       },
       "vr360": null
@@ -154,8 +158,8 @@ window.VX_DB = {
         "note": "Vị trí đúng"
       },
       "summary": "Chùa thờ Phật và Mẫu ở khu vực Tân Hương trước hợp nhất. Danh mục tỉnh dùng tên “Chùa Đồi Cao”, tư liệu Hán Nôm gọi “Chùa Đôi Cao”; khuôn viên được ghi khoảng 23.199 m².",
-      "headline": null,
-      "tagline": null,
+      "headline": "Ngôi chùa trên đồi thờ Phật, thờ Mẫu, còn bia đá năm 1698",
+      "tagline": "Hội chùa 14–15 tháng Giêng · Di tích cấp tỉnh từ 2004",
       "quote": null,
       "history": "Cơ sở Phật giáo truyền thống, thờ Phật và thờ Mẫu. Nguồn Hán Nôm ghi tên Chùa Đôi Cao và cho thấy di tích bảo lưu hệ thống văn bia, cột đá và đồ tự khí có giá trị nghiên cứu.",
       "timeline": [
@@ -164,18 +168,26 @@ window.VX_DB = {
           "text": "niên đại bia “Đôi Cao tự ký”."
         },
         {
-          "time": "12/11/2004",
-          "text": "xếp hạng cấp tỉnh."
+          "time": "1999",
+          "text": "xã trùng tu chùa, xây gác chuông."
         },
         {
-          "time": "2009",
-          "text": "khảo sát lại văn bia và di sản Hán Nôm."
+          "time": "2002",
+          "text": "nhân dân và các nhà hảo tâm công đức hơn 120 triệu đồng tu bổ chùa."
+        },
+        {
+          "time": "12/11/2004",
+          "text": "xếp hạng di tích cấp tỉnh."
+        },
+        {
+          "time": "25/10/2009",
+          "text": "khảo sát lại văn bia, xác định niên đại bia."
         }
       ],
       "architecture": "Khuôn viên theo danh mục tỉnh khoảng 23.199 m², gồm chùa, nhà Tổ, nhà Tăng, nhà khánh tiết và công trình phụ trợ. Khảo sát ghi 4 bia, 9 cột đá có văn khắc, 4 câu đối và 2 hoành phi.",
       "recognition": {
-        "text": "Quyết định số 2775/QĐ-UBND ngày 12/11/2004 của UBND tỉnh Thái Nguyên.",
-        "number": "2775/QĐ-UBND",
+        "text": "Quyết định số 2775/QĐ-UB ngày 12/11/2004 của UBND tỉnh Thái Nguyên.",
+        "number": "2775/QĐ-UB",
         "date": "2004-11-12",
         "issuer": "UBND tỉnh Thái Nguyên",
         "scope": "Chùa Đồi Cao",
@@ -211,7 +223,58 @@ window.VX_DB = {
           "assets/img/dia_diem/chua_doi_cao/5.png"
         ]
       },
-      "vr360": null
+      "vr360": null,
+      "corrections": [
+        {
+          "field": "name",
+          "status": "mâu thuẫn nguồn",
+          "note": "Phụ lục II (2026) ghi “Chùa Đồi Cao”; danh mục 2014, Viện Hán Nôm, Báo Thái Nguyên 2011 và văn bia “Đôi Cao tự ký” ghi “Đôi Cao”. Giữ tên hành chính mới nhất, “Đôi Cao” là tên gọi khác.",
+          "sources": [
+            "PL2",
+            "DM2014",
+            "HANNOM2009",
+            "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"
+          ]
+        },
+        {
+          "field": "recognition.number",
+          "status": "sửa",
+          "from": "2775/QĐ-UBND",
+          "to": "2775/QĐ-UB",
+          "note": "Danh mục 2014 ghi cả loạt QĐ ngày 12/11/2004 (2773–2779) với ký hiệu /QĐ-UB; Phụ lục II 2026 chuẩn hoá thành QĐ-UBND. Chưa thấy bản gốc.",
+          "sources": [
+            "DM2014",
+            "PL2"
+          ]
+        },
+        {
+          "field": "recognition.date / area / worship / relics",
+          "status": "đúng",
+          "note": "12/11/2004; 23.199 m²; thờ Phật, thờ Mẫu; 4 bia, 9 cột đá, 4 câu đối, 2 hoành phi.",
+          "sources": [
+            "PL2",
+            "DM2014",
+            "HANNOM2009"
+          ]
+        },
+        {
+          "field": "timeline",
+          "status": "bổ sung",
+          "note": "Mốc 1999, 2002 theo Báo Thái Nguyên 2011; ngày khảo sát 25/10/2009 theo Viện Hán Nôm. Niên đại khởi dựng (thời Lý / Hậu Lê) chưa thống nhất nên không đưa vào.",
+          "sources": [
+            "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C",
+            "HANNOM2009"
+          ]
+        },
+        {
+          "field": "address",
+          "status": "chưa xác minh",
+          "note": "Báo 2011 ghi chùa trên quả đồi thuộc thôn Phúc Duyên, xã Tân Hương; chưa thấy nguồn chính thức ghi “TDP Đồi Cao”.",
+          "sources": [
+            "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"
+          ]
+        }
+      ]
     },
     {
       "id": "dinh_gia_thu",
@@ -389,21 +452,25 @@ window.VX_DB = {
         "note": "Vị trí đúng"
       },
       "summary": "Đình thờ thần Tam Giang ở khu vực Tân Hương trước hợp nhất. Danh mục tỉnh ghi khu di tích khoảng 736 m², gồm đình, nhà sắp lễ và công trình phụ trợ.",
-      "headline": null,
-      "tagline": null,
+      "headline": "Đình thờ thần Tam Giang, còn giữ 2 sắc phong triều Khải Định",
+      "tagline": "Dời về vị trí hiện nay từ mùa đông năm 1946",
       "quote": null,
       "history": "Đình làng thờ thần Tam Giang, thuộc lớp tín ngưỡng thờ các nhân vật có công hộ quốc phổ biến ở vùng sông Cầu và Kinh Bắc – Thái Nguyên.",
       "timeline": [
         {
+          "time": "1946",
+          "text": "mùa đông năm Bính Tuất, đình được di dời về vị trí hiện nay."
+        },
+        {
           "time": "25/01/2006",
-          "text": "xếp hạng cấp tỉnh."
+          "text": "xếp hạng di tích cấp tỉnh."
         },
         {
           "time": "2009",
           "text": "khảo sát Hán Nôm ghi nhận sắc phong, bia và câu đối còn lưu tại đình."
         }
       ],
-      "architecture": "Khu di tích khoảng 736 m², gồm đình, nhà sắp lễ và công trình phụ trợ. Khảo sát ghi nhận 2 sắc phong, 1 bia và 2 câu đối.",
+      "architecture": "Danh mục tỉnh ghi khu di tích khoảng 736 m², gồm đình, nhà sắp lễ và công trình phụ trợ (Báo Thái Nguyên 2020 mô tả khuôn viên trên 1.000 m²). Đình kiểu chữ “đinh”, 3 gian 2 dĩ, cột kèo gỗ lim, cửa võng chạm trổ sơn son thếp vàng; có trống cái đường kính mặt khoảng 1 m. Khảo sát Hán Nôm ghi nhận 2 sắc phong (triều Khải Định năm thứ IX), 1 bia và 2 câu đối.",
       "recognition": {
         "text": "Quyết định số 204/QĐ-UBND ngày 25/01/2006 của UBND tỉnh Thái Nguyên.",
         "number": "204/QĐ-UBND",
@@ -426,8 +493,8 @@ window.VX_DB = {
           "label": "Viện Hán Nôm: di sản Phổ Yên"
         },
         {
-          "url": null,
-          "label": "Báo Thái Nguyên: Phúc Duyên (2020)"
+          "url": "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE",
+          "label": "Báo Thái Nguyên: Đình Phúc Duyên (2020)"
         }
       ],
       "narration": null,
@@ -442,12 +509,46 @@ window.VX_DB = {
           "assets/img/dia_diem/dinh_phuc_duyen/1.png",
           "assets/img/dia_diem/dinh_phuc_duyen/2.png",
           "assets/img/dia_diem/dinh_phuc_duyen/3.png",
-          "assets/img/dia_diem/dinh_phuc_duyen/4.png",
-          "assets/img/dia_diem/dinh_phuc_duyen/5.JPG",
-          "assets/img/dia_diem/dinh_phuc_duyen/6.JPG"
+          "assets/img/dia_diem/dinh_phuc_duyen/4.png"
         ]
       },
-      "vr360": null
+      "vr360": null,
+      "corrections": [
+        {
+          "field": "name / worship / recognition",
+          "status": "đúng",
+          "note": "Đình thờ thần Tam Giang; 204/QĐ-UBND ngày 25/01/2006, xếp hạng riêng.",
+          "sources": [
+            "PL2",
+            "DM2014"
+          ]
+        },
+        {
+          "field": "architecture.area",
+          "status": "mâu thuẫn nguồn",
+          "note": "736 m² (Phụ lục II – diện tích khu di tích) vs “khuôn viên trên 1.000 m²” (Báo TN 2020) – khác phạm vi; dùng 736 m², ghi chú con số báo chí.",
+          "sources": [
+            "PL2",
+            "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+          ]
+        },
+        {
+          "field": "sources",
+          "status": "sửa",
+          "note": "Bổ sung URL bài Báo Thái Nguyên 08/08/2020 (Excel chỉ có nhãn, không có link).",
+          "sources": [
+            "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+          ]
+        },
+        {
+          "field": "address",
+          "status": "chưa xác minh",
+          "note": "Báo 2020 ghi đình ở xóm Duyên Bắc, trên trục đường liên xã Tân Hương – Tiên Phong; chưa có nguồn tên TDP sau 2025.",
+          "sources": [
+            "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+          ]
+        }
+      ]
     },
     {
       "id": "khu_luu_niem_ts_nguyen_cau",
@@ -531,9 +632,11 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": "assets/img/dia_diem/khu_luu_niem_ts_nguyen_cau/1.jpg",
+        "cover": "assets/img/dia_diem/khu_luu_niem_ts_nguyen_cau/1.png",
         "gallery": [
-          "assets/img/dia_diem/khu_luu_niem_ts_nguyen_cau/1.jpg"
+          "assets/img/dia_diem/khu_luu_niem_ts_nguyen_cau/1.png",
+          "assets/img/dia_diem/khu_luu_niem_ts_nguyen_cau/2.png",
+          "assets/img/dia_diem/khu_luu_niem_ts_nguyen_cau/3.png"
         ]
       },
       "vr360": null
@@ -609,10 +712,13 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": "assets/img/dia_diem/dinh_xuan_tru/1.jpg",
+        "cover": "assets/img/dia_diem/dinh_xuan_tru/1.png",
         "gallery": [
-          "assets/img/dia_diem/dinh_xuan_tru/1.jpg",
-          "assets/img/dia_diem/dinh_xuan_tru/2.jpg"
+          "assets/img/dia_diem/dinh_xuan_tru/1.png",
+          "assets/img/dia_diem/dinh_xuan_tru/2.png",
+          "assets/img/dia_diem/dinh_xuan_tru/3.png",
+          "assets/img/dia_diem/dinh_xuan_tru/4.png",
+          "assets/img/dia_diem/dinh_xuan_tru/5.png"
         ]
       },
       "vr360": null
@@ -716,10 +822,10 @@ window.VX_DB = {
         "note": "Vị trí đúng"
       },
       "summary": "Đình thờ Tam Giang ở khu vực Tân Hương trước hợp nhất. Khu di tích khoảng 815 m², gồm đình, nhà sắp lễ và công trình phụ trợ.",
-      "headline": null,
-      "tagline": null,
+      "headline": "Đình làng thờ Tam Giang, lưu giữ 7 tấm bia Hán Nôm",
+      "tagline": "Di tích lịch sử – văn hóa cấp tỉnh từ năm 2007",
       "quote": null,
-      "history": "Đình thờ Tam Giang và là không gian tế lễ, hội họp truyền thống của làng Phù Hương. Hệ thống văn khắc còn lại cho thấy quá trình công đức, trùng tu và sinh hoạt tín ngưỡng của cộng đồng qua nhiều thời kỳ.",
+      "history": "Đình thờ Tam Giang, thuộc khu vực Tân Hương trước hợp nhất, được UBND tỉnh Thái Nguyên xếp hạng di tích cấp tỉnh năm 2007. Khảo sát di sản Hán Nôm năm 2009 ghi nhận tại đình 1 bài thơ, 7 bia, 5 câu đối và 3 hoành phi.",
       "timeline": [
         {
           "time": "04/01/2007",
@@ -760,10 +866,41 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": null,
-        "gallery": []
+        "cover": "assets/img/dia_diem/dinh_phu_huong/1.png",
+        "gallery": [
+          "assets/img/dia_diem/dinh_phu_huong/1.png",
+          "assets/img/dia_diem/dinh_phu_huong/2.png"
+        ]
       },
-      "vr360": null
+      "vr360": null,
+      "corrections": [
+        {
+          "field": "name / worship / recognition / area / relics",
+          "status": "đúng",
+          "note": "Thờ Tam Giang; 08/QĐ-UBND ngày 04/01/2007; 815 m²; 1 bài thơ, 7 bia, 5 câu đối, 3 hoành phi.",
+          "sources": [
+            "PL2",
+            "DM2014",
+            "HANNOM2009"
+          ]
+        },
+        {
+          "field": "history",
+          "status": "sửa",
+          "note": "Bỏ đoạn diễn giải “văn khắc cho thấy quá trình công đức, trùng tu…” vì nguồn Hán Nôm chỉ thống kê số lượng, không mô tả nội dung.",
+          "sources": [
+            "HANNOM2009"
+          ]
+        },
+        {
+          "field": "address",
+          "status": "chưa xác minh",
+          "note": "Phụ lục II chỉ ghi “Phường Vạn Xuân”.",
+          "sources": [
+            "PL2"
+          ]
+        }
+      ]
     },
     {
       "id": "dinh_yen_trung",
@@ -832,8 +969,13 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": null,
-        "gallery": []
+        "cover": "assets/img/dia_diem/dinh_yen_trung/1.png",
+        "gallery": [
+          "assets/img/dia_diem/dinh_yen_trung/1.png",
+          "assets/img/dia_diem/dinh_yen_trung/2.png",
+          "assets/img/dia_diem/dinh_yen_trung/3.png",
+          "assets/img/dia_diem/dinh_yen_trung/4.png"
+        ]
       },
       "vr360": null
     },
@@ -904,11 +1046,10 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": "assets/img/dia_diem/dinh_nguyen_hau/1.jpg",
+        "cover": "assets/img/dia_diem/dinh_nguyen_hau/1.png",
         "gallery": [
-          "assets/img/dia_diem/dinh_nguyen_hau/1.jpg",
-          "assets/img/dia_diem/dinh_nguyen_hau/2.JPG",
-          "assets/img/dia_diem/dinh_nguyen_hau/3.JPG"
+          "assets/img/dia_diem/dinh_nguyen_hau/1.png",
+          "assets/img/dia_diem/dinh_nguyen_hau/2.png"
         ]
       },
       "vr360": null
@@ -1045,13 +1186,10 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": "assets/img/dia_diem/dinh_gia_trung/1.jpg",
+        "cover": "assets/img/dia_diem/dinh_gia_trung/1.png",
         "gallery": [
-          "assets/img/dia_diem/dinh_gia_trung/1.jpg",
           "assets/img/dia_diem/dinh_gia_trung/1.png",
-          "assets/img/dia_diem/dinh_gia_trung/2.jpg",
           "assets/img/dia_diem/dinh_gia_trung/2.png",
-          "assets/img/dia_diem/dinh_gia_trung/3.jpg",
           "assets/img/dia_diem/dinh_gia_trung/3.png"
         ]
       },
@@ -1204,10 +1342,11 @@ window.VX_DB = {
         "cover": "assets/img/hero/dinh_thanh_thu.png",
         "gallery": [
           "assets/img/dia_diem/dinh_thanh_thu/1.png",
-          "assets/img/dia_diem/dinh_thanh_thu/2.JPG",
-          "assets/img/dia_diem/dinh_thanh_thu/6.JPG",
-          "assets/img/dia_diem/dinh_thanh_thu/7.JPG",
-          "assets/img/dia_diem/dinh_thanh_thu/8.JPG"
+          "assets/img/dia_diem/dinh_thanh_thu/2.png",
+          "assets/img/dia_diem/dinh_thanh_thu/3.png",
+          "assets/img/dia_diem/dinh_thanh_thu/4.png",
+          "assets/img/dia_diem/dinh_thanh_thu/5.png",
+          "assets/img/dia_diem/dinh_thanh_thu/6.png"
         ]
       },
       "vr360": null
@@ -1290,13 +1429,11 @@ window.VX_DB = {
         "cover": "assets/img/hero/dinh_thanh_quang.png",
         "gallery": [
           "assets/img/dia_diem/dinh_thanh_quang/1.png",
-          "assets/img/dia_diem/dinh_thanh_quang/2.JPG",
+          "assets/img/dia_diem/dinh_thanh_quang/2.png",
           "assets/img/dia_diem/dinh_thanh_quang/3.png",
           "assets/img/dia_diem/dinh_thanh_quang/4.png",
           "assets/img/dia_diem/dinh_thanh_quang/5.png",
-          "assets/img/dia_diem/dinh_thanh_quang/6.png",
-          "assets/img/dia_diem/dinh_thanh_quang/7.png",
-          "assets/img/dia_diem/dinh_thanh_quang/8.png"
+          "assets/img/dia_diem/dinh_thanh_quang/6.png"
         ]
       },
       "vr360": null
@@ -1459,8 +1596,8 @@ window.VX_DB = {
       "lunarTime": "Ngày 14 - 15 tháng Giêng",
       "solarTime": "Dịp rằm tháng Giêng",
       "worship": "Tam Bảo (Phật giáo) và thờ Mẫu",
-      "rituals": "Khóa lễ cầu an đầu năm, tụng kinh Dược Sư, dâng hương tam bảo",
-      "activities": "Đấu vật, cờ tướng, chọi gà, giao lưu văn nghệ quần chúng, du xuân vãn cảnh chùa trên đồi",
+      "rituals": "Dâng hương, cầu cho năm mới an lành, mưa thuận gió hòa, vạn vật tốt tươi",
+      "activities": "Đấu vật, cờ tướng, chọi gà, giao lưu văn hóa văn nghệ",
       "source": "Báo Thái Nguyên (16/02/2011)",
       "sourceType": "Bài viết báo chí có ảnh & Video du lịch tâm linh",
       "article": {
@@ -1480,7 +1617,25 @@ window.VX_DB = {
           "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03/Le_hoi_chua_Doi_Cao_03_04.jpg"
         ],
         "folder": "assets/img/le_hoi/Le_hoi_chua_Doi_Cao_03"
-      }
+      },
+      "corrections": [
+        {
+          "field": "lunarTime",
+          "status": "đúng",
+          "note": "Ngày 14–15 tháng Giêng.",
+          "sources": [
+            "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"
+          ]
+        },
+        {
+          "field": "rituals",
+          "status": "sửa",
+          "note": "Bỏ “tụng kinh Dược Sư” – không có nguồn.",
+          "sources": [
+            "https://baothainguyen.vn/van-hoa/201102/tan-huong-to-chuc-le-hoi-chua-doi-cao-3672D2C"
+          ]
+        }
+      ]
     },
     {
       "id": "le_hoi_04",
@@ -1505,12 +1660,9 @@ window.VX_DB = {
       },
       "video": null,
       "media": {
-        "cover": "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_01.jpg",
-        "gallery": [
-          "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_01.jpg",
-          "assets/img/le_hoi/Hoi_lang_Gia_Thu_04/Hoi_lang_Gia_Thu_04_02.jpg"
-        ],
-        "folder": "assets/img/le_hoi/Hoi_lang_Gia_Thu_04"
+        "cover": null,
+        "gallery": [],
+        "folder": null
       }
     },
     {
@@ -1525,8 +1677,8 @@ window.VX_DB = {
       "lunarTime": "Đầu xuân (tháng Giêng)",
       "solarTime": "Tháng Giêng âm lịch",
       "worship": "Đức Thánh Tam Giang",
-      "rituals": "Khai hội bằng trống cái làng, dâng lễ tế Thành hoàng, cầu mùa",
-      "activities": "Kéo co, thi đấu vật, thi đấu cầu lông, bóng đá mini, sinh hoạt văn hóa dân gian",
+      "rituals": "Tế lễ tại đình, dùng trống cái làng làm hiệu lệnh",
+      "activities": "Kéo co, đấu vật, thi đấu cầu lông, bóng đá mini",
       "source": "Báo Thái Nguyên (08/08/2020)",
       "sourceType": "Bài viết chuyên đề có ảnh di tích",
       "article": {
@@ -1535,14 +1687,28 @@ window.VX_DB = {
       },
       "video": null,
       "media": {
-        "cover": "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_01.jpg",
-        "gallery": [
-          "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_01.jpg",
-          "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_02.jpg",
-          "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05/Hoi_lang_Phuc_Duyen_05_03.jpg"
-        ],
-        "folder": "assets/img/le_hoi/Hoi_lang_Phuc_Duyen_05"
-      }
+        "cover": null,
+        "gallery": [],
+        "folder": null
+      },
+      "corrections": [
+        {
+          "field": "lunarTime",
+          "status": "đúng",
+          "note": "Các lễ (khai xuân, vào hạ, lễ hội mùa) nay gộp làm một, tổ chức dịp đầu năm; không có ngày cụ thể.",
+          "sources": [
+            "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+          ]
+        },
+        {
+          "field": "rituals",
+          "status": "sửa",
+          "note": "“Khai hội bằng trống cái, tế Thành hoàng, cầu mùa” không có trong nguồn; chỉ giữ chi tiết trống cái dùng khi tế lễ.",
+          "sources": [
+            "https://baothainguyen.vn/dat-va-nguoi-thai-nguyen/lich-su-danh-thang/202008/dinh-phuc-duyen-3676CFE"
+          ]
+        }
+      ]
     },
     {
       "id": "le_hoi_06",
@@ -1566,11 +1732,9 @@ window.VX_DB = {
       },
       "video": null,
       "media": {
-        "cover": "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06/Gio_tran_TS_Nguyen_Cau_06_01.jpg",
-        "gallery": [
-          "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06/Gio_tran_TS_Nguyen_Cau_06_01.jpg"
-        ],
-        "folder": "assets/img/le_hoi/Gio_tran_TS_Nguyen_Cau_06"
+        "cover": null,
+        "gallery": [],
+        "folder": null
       }
     },
     {
@@ -1620,7 +1784,7 @@ window.VX_DB = {
       "worship": "Thần Tam Giang",
       "rituals": "Tế lễ thành hoàng, đọc văn tế cầu quốc thái dân an, mùa màng bội thu",
       "activities": "Giao lưu thể thao, trò chơi dân gian, liên hoan văn nghệ quần chúng xóm làng",
-      "source": "Viện Nghiên cứu Hán Nôm (2009)",
+      "source": "Chưa có nguồn công khai về lễ hội (nguồn Viện Hán Nôm 2009 trong Excel chỉ thống kê văn khắc)",
       "sourceType": "Tư liệu khảo sát văn khắc, sắc phong",
       "article": {
         "url": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608",
@@ -1630,8 +1794,17 @@ window.VX_DB = {
       "media": {
         "cover": null,
         "gallery": [],
-        "folder": "assets/img/le_hoi/Hoi_lang_Phu_Huong_08"
-      }
+        "folder": null
+      },
+      "unverified": true,
+      "corrections": [
+        {
+          "field": "lunarTime / rituals / activities",
+          "status": "chưa xác minh",
+          "note": "Không tìm thấy nguồn nào về hội làng Phù Hương; cần xác minh tại địa phương.",
+          "sources": []
+        }
+      ]
     },
     {
       "id": "le_hoi_09",
@@ -1657,7 +1830,7 @@ window.VX_DB = {
       "media": {
         "cover": null,
         "gallery": [],
-        "folder": "assets/img/le_hoi/Hoi_lang_Yen_Trung_09"
+        "folder": null
       }
     },
     {
@@ -1776,13 +1949,9 @@ window.VX_DB = {
       },
       "video": null,
       "media": {
-        "cover": "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_01.jpg",
-        "gallery": [
-          "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_01.jpg",
-          "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_02.jpg",
-          "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13/Le_hoi_dinh_Thanh_Quang_13_03.jpg"
-        ],
-        "folder": "assets/img/le_hoi/Le_hoi_dinh_Thanh_Quang_13"
+        "cover": null,
+        "gallery": [],
+        "folder": null
       }
     },
     {

@@ -1,0 +1,2451 @@
+{
+  "title": "VR360 Virtual Tour",
+  "imageResize": {
+    "presetId": "preview",
+    "maxWidth": 4096,
+    "quality": 0.85
+  },
+  "transition": {
+    "enabled": true,
+    "rotation": true,
+    "effect": "fade",
+    "duration": 1200,
+    "speed": 10
+  },
+  "scenes": [
+    {
+      "id": "dji_20261022105433_0325_d",
+      "name": "Đình Thanh Quang",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022105433_0325_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022105433_0325_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.418257500000003,
+        "lng": 105.88735758333334,
+        "heading": null,
+        "altitude": 129
+      },
+      "initialView": {
+        "lon": 180.2,
+        "lat": -31.3,
+        "fov": 85
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "area_mvkcthtl_lixev",
+          "icon": null,
+          "type": "area_landmark",
+          "label": "Đình Thanh Quang",
+          "style": {
+            "fill": "#38bdf8",
+            "line": "#ffffff",
+            "border": "#38bdf8",
+            "opacity": 0.45,
+            "hoverFill": "rgba(56, 189, 248, 0.32)",
+            "borderWidth": 2,
+            "hoverBorder": "#7dd3fc"
+          },
+          "locked": false,
+          "target": "Cổng ĐÌNH LÀNG THANH QUAN",
+          "loai_poi": "ghim_dia_danh",
+          "metadata": {},
+          "noi_dung": null,
+          "vertices": [
+            {
+              "lat": -65.1,
+              "lon": 169.4
+            },
+            {
+              "lat": -56.8,
+              "lon": 164.5
+            },
+            {
+              "lat": -53.9,
+              "lon": 162.8
+            },
+            {
+              "lat": -52,
+              "lon": 164.7
+            },
+            {
+              "lat": -51.2,
+              "lon": 171.6
+            },
+            {
+              "lat": -49.3,
+              "lon": 178.9
+            },
+            {
+              "lat": -49.3,
+              "lon": -177.4
+            },
+            {
+              "lat": -50.2,
+              "lon": -173.8
+            },
+            {
+              "lat": -52.9,
+              "lon": -170.8
+            },
+            {
+              "lat": -54.4,
+              "lon": -167.2
+            },
+            {
+              "lat": -56.1,
+              "lon": -162.6
+            },
+            {
+              "lat": -59.6,
+              "lon": -166.4
+            },
+            {
+              "lat": -60.9,
+              "lon": -172.1
+            },
+            {
+              "lat": -62.1,
+              "lon": -175.8
+            },
+            {
+              "lat": -63.4,
+              "lon": 179.7
+            },
+            {
+              "lat": -64.2,
+              "lon": 177
+            },
+            {
+              "lat": -65.1,
+              "lon": 170.8
+            }
+          ],
+          "entryView": null,
+          "pointKind": "area_landmark",
+          "line_height": 48,
+          "overlay_image": "",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          },
+          "show_polygon_on_hover": true
+        }
+      ]
+    },
+    {
+      "id": "Cổng ĐÌNH LÀNG THANH QUAN",
+      "name": "ĐÌNH LÀNG THANH QUAN",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014085738_0419_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014085738_0419_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417845583333335,
+        "lng": 105.88708866666667,
+        "heading": null,
+        "altitude": -16.203
+      },
+      "initialView": {
+        "lon": 177.3,
+        "lat": -17.3,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mveytegn_hmaaq",
+          "lat": -40.2,
+          "lon": 176.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_082648_00_068",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_082648_00_068",
+      "name": "Sân vào 1",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112006_0558_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112006_0558_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417880111111113,
+        "lng": 105.88691497222223,
+        "heading": null,
+        "altitude": 0.065
+      },
+      "initialView": {
+        "lon": 183.9,
+        "lat": -0.4,
+        "fov": 80
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mveywrjt_udmra",
+          "lat": -25,
+          "lon": 8.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "Cổng ĐÌNH LÀNG THANH QUAN",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mveyxkca_oxyt1",
+          "lat": -24.7,
+          "lon": -140.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_083342_00_073",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhloo6a_y4phd",
+          "lat": 30.7,
+          "lon": 49.3,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "dji_20261014090047_0422_d",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "dji_20261014090047_0422_d",
+      "name": "Ảnh trên cao Lối vào ",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090047_0422_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090047_0422_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417700972222224,
+        "lng": 105.88695533333333,
+        "heading": null,
+        "altitude": -7.603
+      },
+      "initialView": {
+        "lon": 240.8,
+        "lat": -36.7,
+        "fov": 90
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhlltqz_fvl1o",
+          "lat": -37.1,
+          "lon": 147.5,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "dji_20261014090253_0426_d",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhlmz1s_vg1fw",
+          "lat": -41,
+          "lon": -60.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_082648_00_068",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhlnjoa_c29an",
+          "lat": -49.7,
+          "lon": -149.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_083342_00_073",
+      "name": "Sân vào 2",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112651_0568_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112651_0568_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417700777777778,
+        "lng": 105.88698586111111,
+        "heading": null,
+        "altitude": 2.245
+      },
+      "initialView": {
+        "lon": -172.4,
+        "lat": 1.9,
+        "fov": 85
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvez2jtw_kdxgg",
+          "lat": -25.4,
+          "lon": 179.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_083440_00_074",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvez2w5y_73jyr",
+          "lat": -33.6,
+          "lon": 12,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "dji_20261014085925_0421_d",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": 1.9,
+            "lon": 6.5
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_083440_00_074",
+      "name": "Sân vào 3",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112628_0567_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112628_0567_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417714583333336,
+        "lng": 105.88690633333334,
+        "heading": null,
+        "altitude": 2.545
+      },
+      "initialView": {
+        "lon": 591.9,
+        "lat": 0.4,
+        "fov": 90
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvez6wkm_a8khd",
+          "lat": -17.8,
+          "lon": 156.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_083342_00_073",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": 6.4,
+            "lon": 233.6
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvez7h9u_bskig",
+          "lat": -26.6,
+          "lon": 103.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_084209_00_080",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf1t8up_cohvy",
+          "lat": -21.9,
+          "lon": 8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "dji_20261014090253_0426_d",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf1u6z2_vyrr2",
+          "lat": 29.4,
+          "lon": -67,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 4",
+          "locked": false,
+          "target": "dji_20261014090214_0425_d",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf1uq3n_t1hj5",
+          "lat": -37.9,
+          "lon": -116.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 5",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "dji_20261014090214_0425_d",
+      "name": "Toàn cảnh trên cao sân bên Đình",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090214_0425_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090214_0425_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417669194444446,
+        "lng": 105.88676666666667,
+        "heading": null,
+        "altitude": -6.903
+      },
+      "initialView": {
+        "lon": 69.4,
+        "lat": -45,
+        "fov": 85
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhlq6ee_32vlh",
+          "lat": -78.2,
+          "lon": 93.3,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "dji_20261014090253_0426_d",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhlr9br_mlcot",
+          "lat": -41.4,
+          "lon": 70,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_083440_00_074",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": {
+            "fov": 70,
+            "lat": 3,
+            "lon": 513.9
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_084209_00_080",
+      "name": "Lối vào Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_084209_00_080.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_084209_00_080.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417627777777778,
+        "lng": 105.88705277777778,
+        "heading": null,
+        "altitude": -19
+      },
+      "initialView": {
+        "lon": 73.4,
+        "lat": -0.4,
+        "fov": 75
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf27njv_1pjrg",
+          "lat": -11.9,
+          "lon": -36.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_083440_00_074",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": 7.7,
+            "lon": 419.7
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf28aw4_nfoi2",
+          "lat": -24.4,
+          "lon": 85,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_083959_00_079",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2a6vl_2gaw4",
+          "lat": -10.8,
+          "lon": 64.7,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_083748_00_077",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2aqet_9ozbn",
+          "lat": -11.9,
+          "lon": 100.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 4",
+          "locked": false,
+          "target": "img_20261014_084423_00_083",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhrjv04_sn1l7",
+          "lat": -13,
+          "lon": -104.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 5",
+          "locked": false,
+          "target": "dji_20261014090253_0426_d",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": -0.8,
+            "lon": 989.9
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_083959_00_079",
+      "name": "Sân chính ĐÌNH LÀNG",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_083959_00_079.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_083959_00_079.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417605555555557,
+        "lng": 105.88704166666668,
+        "heading": null,
+        "altitude": -18
+      },
+      "initialView": {
+        "lon": 174.1,
+        "lat": -3.5,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhfs0sp_bv87l",
+          "lat": -20.9,
+          "lon": -87,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_084209_00_080",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": 1.2,
+            "lon": -75.3
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhfsc50_jjlu0",
+          "lat": -20.6,
+          "lon": 125.4,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_084423_00_083",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhfsfll_si3tm",
+          "lat": -16.7,
+          "lon": 59.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_083748_00_077",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": -2.5,
+            "lon": 175
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhiagea_dweoh",
+          "lat": -20.8,
+          "lon": -146.7,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 4",
+          "locked": false,
+          "target": "img_20261014_084253_00_081",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_083748_00_077",
+      "name": "Ban ngoài sân Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_083748_00_077.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_083748_00_077.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417627777777778,
+        "lng": 105.88705,
+        "heading": null,
+        "altitude": -16
+      },
+      "initialView": {
+        "lon": 174.4,
+        "lat": -0.3,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhgeu9g_s9uj8",
+          "lat": -16.1,
+          "lon": -95.7,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_084423_00_083",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhgf077_s661j",
+          "lat": -21.2,
+          "lon": -33.6,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_083959_00_079",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": 2.2,
+            "lon": 260.7
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhjt70y_132na",
+          "lat": -22.2,
+          "lon": 174.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_083621_00_075",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_083621_00_075",
+      "name": "Bên trong Ban sân Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_083621_00_075.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_083621_00_075.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417616666666667,
+        "lng": 105.88705,
+        "heading": null,
+        "altitude": -16
+      },
+      "initialView": {
+        "lon": 165.3,
+        "lat": -3.1,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhju8oy_v9bgu",
+          "lat": -26.2,
+          "lon": -16.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_083748_00_077",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": -0.4,
+            "lon": 356.2
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_084423_00_083",
+      "name": "Lối vào ban trái Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_084423_00_083.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_084423_00_083.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.41756388888889,
+        "lng": 105.88688611111112,
+        "heading": null,
+        "altitude": -20
+      },
+      "initialView": {
+        "lon": 327.1,
+        "lat": -0.7,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhhvl20_skry9",
+          "lat": -22.2,
+          "lon": -32.4,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_085046_00_087",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhhvqua_4btnp",
+          "lat": -24.4,
+          "lon": 84.3,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_083959_00_079",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": -0.1,
+            "lon": 264.3
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhhvvs5_rvp76",
+          "lat": -20.7,
+          "lon": 151.5,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_083748_00_077",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": 2.1,
+            "lon": 448
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_085046_00_087",
+      "name": "Ban trái Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110945_0552_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110945_0552_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417645722222222,
+        "lng": 105.88688330555556,
+        "heading": null,
+        "altitude": -1.806
+      },
+      "initialView": {
+        "lon": -188.2,
+        "lat": -5.2,
+        "fov": 80
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf2dnrf_mdkqv",
+          "lat": -38.9,
+          "lon": 7.6,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_084423_00_083",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": {
+            "fov": 70,
+            "lat": -0.9,
+            "lon": 478
+          },
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2e3bv_9i7iz",
+          "lat": -28.2,
+          "lon": -171.3,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_085536_00_092",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2erfm_dm8ub",
+          "lat": -16,
+          "lon": 92.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_085704_00_095",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_084253_00_081",
+      "name": "Lối vào ban phải Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_084253_00_081.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_084253_00_081.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417555555555555,
+        "lng": 105.88690555555556,
+        "heading": null,
+        "altitude": -22
+      },
+      "initialView": {
+        "lon": 22.5,
+        "lat": 0.8,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhisb46_k5c2r",
+          "lat": -22.2,
+          "lon": 22.7,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_085502_00_091",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_085502_00_091",
+      "name": "Ban phải Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110815_0549_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110815_0549_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.41759236111111,
+        "lng": 105.88689011111111,
+        "heading": null,
+        "altitude": -2.206
+      },
+      "initialView": {
+        "lon": 181.8,
+        "lat": -8.9,
+        "fov": 115
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf2inpr_b4jhx",
+          "lat": -18.7,
+          "lon": -39.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_085536_00_092",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2jbm4_hb0cl",
+          "lat": -43.4,
+          "lon": 143.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_085536_00_092",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhiy728_xtjb9",
+          "lat": -44.6,
+          "lon": 33,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_085704_00_095",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_085704_00_095",
+      "name": "Chính ban Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110725_0548_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110725_0548_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 0,
+        "lng": 0,
+        "heading": null,
+        "altitude": -2.206
+      },
+      "initialView": {
+        "lon": 541.9,
+        "lat": -1.2,
+        "fov": 95
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf2lhyt_0atr9",
+          "lat": -21.3,
+          "lon": 133,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_085258_00_089",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2m67p_175pv",
+          "lat": -19.9,
+          "lon": -110.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_084929_00_085",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhj0hu8_ffuoa",
+          "lat": -21.3,
+          "lon": -51.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_085046_00_087",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhj0tt9_4tdk0",
+          "lat": -22.6,
+          "lon": 74.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 4",
+          "locked": false,
+          "target": "img_20261014_085502_00_091",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_085536_00_092",
+      "name": "Hậu cung Đình Làng",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022111401_0553_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022111401_0553_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.41763877777778,
+        "lng": 105.88679225000001,
+        "heading": null,
+        "altitude": -0.566
+      },
+      "initialView": {
+        "lon": -184.3,
+        "lat": 9.2,
+        "fov": 60
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf2ghg2_ldwco",
+          "lat": -41.8,
+          "lon": 49.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_085046_00_087",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf2h2h0_ckq5p",
+          "lat": -26.3,
+          "lon": -79.7,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_085502_00_091",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "dji_20261014090253_0426_d",
+      "name": "Sân bên Đình",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090253_0426_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090253_0426_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417647694444447,
+        "lng": 105.88675511111111,
+        "heading": null,
+        "altitude": -18.903
+      },
+      "initialView": {
+        "lon": 796,
+        "lat": 5.9,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf4efoy_0dss1",
+          "lat": -13.5,
+          "lon": 94.6,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_084209_00_080",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf4fmd7_up5ay",
+          "lat": -12.7,
+          "lon": 46.3,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf4g7iz_95723",
+          "lat": -8.3,
+          "lon": 63.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_083440_00_074",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_091227_00_112",
+      "name": "Cổng ĐÌNH THANH QUANG",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112542_0566_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112542_0566_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417799944444447,
+        "lng": 105.88689375000001,
+        "heading": null,
+        "altitude": 1.971
+      },
+      "initialView": {
+        "lon": 203.1,
+        "lat": -2.9,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf1xa0f_muw5h",
+          "lat": -21.4,
+          "lon": 178.4,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_091136_00_110",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhlj23j_y8ph0",
+          "lat": -16.3,
+          "lon": 3.4,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "Đình Thanh Quang",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhltopy_7zd1w",
+          "lat": 28.7,
+          "lon": -156.7,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "dji_20261014090149_0424_d",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhqz75v_8da81",
+          "lat": -14,
+          "lon": 81,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 4",
+          "locked": false,
+          "target": "img_20261014_083440_00_074",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "dji_20261014090149_0424_d",
+      "name": "Toàn cảnh ĐÌNH",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090149_0424_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261014090149_0424_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417781944444446,
+        "lng": 105.8867996388889,
+        "heading": null,
+        "altitude": -7.603
+      },
+      "initialView": {
+        "lon": 0,
+        "lat": 0,
+        "fov": 75
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhlt7kh_q2odp",
+          "lat": -58,
+          "lon": -13.4,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "Đình Thanh Quang",
+      "name": "Cột cờ",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_091253_00_113.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_091253_00_113.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417755555555555,
+        "lng": 105.88685277777779,
+        "heading": null,
+        "altitude": -10
+      },
+      "initialView": {
+        "lon": -23.7,
+        "lat": 22.3,
+        "fov": 105
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvezk5bt_j5q4w",
+          "lat": -14.3,
+          "lon": 72.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_083440_00_074",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf1wf7e_a0x1x",
+          "lat": -16.2,
+          "lon": 132.3,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_091136_00_110",
+      "name": "Sân chính ĐÌNH THANH QUANG",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112359_0563_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022112359_0563_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417826611111114,
+        "lng": 105.88680369444445,
+        "heading": null,
+        "altitude": 2.555
+      },
+      "initialView": {
+        "lon": 548.6,
+        "lat": 4,
+        "fov": 90
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvf1y4u2_11ncw",
+          "lat": -23.5,
+          "lon": -178.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_091110_00_109",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvf1ygd0_d8olv",
+          "lat": -17.1,
+          "lon": 156.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_090212_00_096",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhk2jrf_sad8t",
+          "lat": -14,
+          "lon": 60.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhkugaz_kydj4",
+          "lat": -17.7,
+          "lon": -150.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 4",
+          "locked": false,
+          "target": "img_20261014_090655_00_102",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_091110_00_109",
+      "name": "Lư hương sân chính Đền",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_091110_00_109.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_091110_00_109.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417744444444445,
+        "lng": 105.88671944444445,
+        "heading": null,
+        "altitude": -7
+      },
+      "initialView": {
+        "lon": -16.5,
+        "lat": -4.9,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhk4f7l_10y0h",
+          "lat": -16.7,
+          "lon": -58.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_090212_00_096",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhku56f_68qy3",
+          "lat": -18.5,
+          "lon": 23.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_090655_00_102",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhrdp0m_0h2yb",
+          "lat": -22.1,
+          "lon": 163.1,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_091227_00_112",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_090212_00_096",
+      "name": "Cửa vào ban trái",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110323_0542_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110323_0542_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417820250000002,
+        "lng": 105.88670569444444,
+        "heading": null,
+        "altitude": -2.781
+      },
+      "initialView": {
+        "lon": 544,
+        "lat": -1.8,
+        "fov": 100
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhkf52h_o8lyh",
+          "lat": -50.4,
+          "lon": -178.6,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_090313_00_098",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_090313_00_098",
+      "name": "Chính ban trái Đình Thanh Quang",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_090313_00_098.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_090313_00_098.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417755555555555,
+        "lng": 105.88674722222223,
+        "heading": null,
+        "altitude": -12
+      },
+      "initialView": {
+        "lon": 198.1,
+        "lat": -2.9,
+        "fov": 70
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhkfjvl_xdwmh",
+          "lat": -25.2,
+          "lon": 17.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_090212_00_096",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhlcgre_mt3dc",
+          "lat": -25.1,
+          "lon": -121.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_091031_00_108",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_090655_00_102",
+      "name": "Ban thờ Bác Hồ",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110126_0538_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110126_0538_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417812722222223,
+        "lng": 105.88675836111112,
+        "heading": null,
+        "altitude": -2.981
+      },
+      "initialView": {
+        "lon": 187,
+        "lat": -2.9,
+        "fov": 80
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhr977q_qbemn",
+          "lat": -37.9,
+          "lon": -173.8,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_090719_00_103",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhr9lq9_4q6d2",
+          "lat": -31.1,
+          "lon": -5.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_091110_00_109",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhr9q5q_ezr4u",
+          "lat": -21.7,
+          "lon": 86.9,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 3",
+          "locked": false,
+          "target": "img_20261014_090848_00_106",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_090719_00_103",
+      "name": "Chính ban thờ Bác Hồ",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_090719_00_103.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_090719_00_103.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417825,
+        "lng": 105.88675277777779,
+        "heading": null,
+        "altitude": -8
+      },
+      "initialView": {
+        "lon": -22,
+        "lat": -2.7,
+        "fov": 90
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhl204p_79lfs",
+          "lat": -28.1,
+          "lon": 158.5,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_090655_00_102",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhla3by_2ekuz",
+          "lat": -26,
+          "lon": -75.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_091031_00_108",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_090848_00_106",
+      "name": "Ban chính ĐÌNH THANH QUANG",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110040_0537_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110040_0537_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417811472222223,
+        "lng": 105.88673047222223,
+        "heading": null,
+        "altitude": -2.581
+      },
+      "initialView": {
+        "lon": 538.7,
+        "lat": 5.9,
+        "fov": 80
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhl53aw_bkwyi",
+          "lat": -23.4,
+          "lon": -90.4,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_090719_00_103",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        },
+        {
+          "id": "hs_mvhl586r_ffvc8",
+          "lat": -23,
+          "lon": 110.2,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 2",
+          "locked": false,
+          "target": "img_20261014_090313_00_098",
+          "loai_poi": null,
+          "navStyle": "default",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_091031_00_108",
+      "name": "Ban giữa Hậu Cung ",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_091031_00_108.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/IMG_20261014_091031_00_108.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417811111111114,
+        "lng": 105.88672222222223,
+        "heading": null,
+        "altitude": -5
+      },
+      "initialView": {
+        "lon": 135,
+        "lat": -4.1,
+        "fov": 85
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": [
+        {
+          "id": "hs_mvhldchi_78q0f",
+          "lat": -2.4,
+          "lon": 114.5,
+          "icon": "dot",
+          "type": "nav",
+          "label": "Lối đi 1",
+          "locked": false,
+          "target": "img_20261014_091007_00_107",
+          "loai_poi": null,
+          "navStyle": "preview_expand",
+          "entryView": null,
+          "pointKind": "nav",
+          "khi_dua_chuot_vao": {
+            "hien_thi_anh_thu_nho": false,
+            "duong_dan_thumbnail": "",
+            "van_ban_huong_dan": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "img_20261014_091007_00_107",
+      "name": "Hậu cung ĐÌNH THANH QUANG",
+      "group": "Mặc định",
+      "image": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110534_0546_D.jpg",
+      "thumb": "https://vr360-builder.metatwin.vn/media/scenes/originals/DJI_20261022110534_0546_D.jpg",
+      "info": "",
+      "gps": {
+        "lat": 21.417882111111112,
+        "lng": 105.8867075,
+        "heading": null,
+        "altitude": -2.099
+      },
+      "initialView": {
+        "lon": 178.3,
+        "lat": 2.7,
+        "fov": 80
+      },
+      "autoTour": 0,
+      "autoTourDuration": 20,
+      "transition": {
+        "enabled": true,
+        "rotation": true,
+        "effect": "fade",
+        "duration": 1200,
+        "speed": 10
+      },
+      "hotspots": []
+    }
+  ]
+}

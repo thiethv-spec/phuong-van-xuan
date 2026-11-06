@@ -189,7 +189,9 @@
     setText("headline", headline(s));
     setText("subline", s.tagline || (s.formerArea ? "Thuộc địa bàn " + s.formerArea : ""));
     setHref("directions", "https://www.google.com/maps/dir/?api=1&destination=" + s.coords.lat + "," + s.coords.lng);
+    var hasVr = ((window.VX_VR360 || {}).tours || []).indexOf(s.id) > -1;
     setHref("vrLink", VX.url("vr360", { id: s.id }));
+    slots("vrLink").forEach(function (el) { el.hidden = !hasVr; });
     setHref("mapLink", VX.url("map", { id: s.id }));
 
     renderProse(s);

@@ -19,10 +19,13 @@
     return '' +
       '<header class="vx-header">' +
       '  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Điều hướng chính">' +
-      '    <div class="container container-vx-narrow">' +
+      '    <div class="container container-vx">' +
       '      <a class="vx-brand navbar-brand me-auto" href="' + VX.url("home") + '">' +
-      '        <span class="vx-brand__title">Di tích lịch sử</span>' +
-      '        <span class="vx-brand__sub">Phường Vạn Xuân, Tỉnh Thái Nguyên</span>' +
+      '        <img class="vx-brand__logo" src="' + VX.asset("assets/img/logo-thai-nguyen.webp") + '" alt="Biểu trưng tỉnh Thái Nguyên" width="44" height="46">' +
+      '        <span class="vx-brand__text">' +
+      '          <span class="vx-brand__title">Di tích lịch sử</span>' +
+      '          <span class="vx-brand__sub">Phường Vạn Xuân, Tỉnh Thái Nguyên</span>' +
+      '        </span>' +
       '      </a>' +
       '      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">' +
       '        <span class="navbar-toggler-icon"></span>' +
@@ -38,7 +41,9 @@
   function footer() {
     return '' +
       '<footer class="vx-footer">' +
-      '  <div class="container container-vx-narrow">' +
+      '  <img src="' + VX.asset("assets/img/hoasen_left.webp") + '" class="vx-lotus-corner vx-lotus-left" alt="" aria-hidden="true">' +
+      '  <img src="' + VX.asset("assets/img/hoasen_right.webp") + '" class="vx-lotus-corner vx-lotus-right" alt="" aria-hidden="true">' +
+      '  <div class="container container-vx">' +
       '    <div class="row vx-footer__cols gy-4">' +
       '      <div class="col-md-4 vx-footer__brand"><h4>Di tích lịch sử</h4><p class="mb-0">Phường Vạn Xuân, Tỉnh Thái Nguyên</p></div>' +
       '      <div class="col-md-5 ps-md-4"><h4>Thông tin liên hệ</h4><ul>' +
