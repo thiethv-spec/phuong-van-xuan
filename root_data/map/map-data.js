@@ -49,7 +49,7 @@ for(var j=0;j<T.length;j++){
 var legacy_fests=[];
 for(var k=0;k<F.length;k++){
   var f=F[k];
-  legacy_fests.push({id:f[0],group:"le-hoi",ll:f[5],c:"#9e3b2e",cal:"al",siteIds:f[4],vi:{n:f[1],d:f[2],s:"",dl:f[3],intro:f[10]},en:{n:f[1],d:"",s:"",dl:f[3],intro:[]}},m:f[6],d:f[7],dur:f[8],img:f[9]});
+  legacy_fests.push({id:f[0],group:"le-hoi",ll:f[5],c:"#9e3b2e",cal:"al",siteIds:f[4],vi:{n:f[1],d:f[2],s:"",dl:f[3],intro:f[10]},en:{n:f[1],d:"",s:"",dl:f[3],intro:[]},m:f[6],d:f[7],dur:f[8],img:f[9]});
 }
 
 var doc={
