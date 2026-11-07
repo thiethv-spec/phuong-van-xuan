@@ -295,11 +295,15 @@ def main():
             })
 
     doc = {
-        "schema": "maplibre-document-v1", "version": 1,
+        "schema": "maplibre-document v1", "version": 1,
         "title": "Bản đồ số di tích — Phường Vạn Xuân",
-        "editor_items": items, "models": [], "vegetation_instances": [],
+        "editor_items": items,
+        "models": [{"id": "m1", "name": "default"}],
+        "vegetation_items": [{"id": "v1", "name": "default"}],
+        "vegetation_instances": [],
         "outlines": [], "hover_outlines": [],
         "payload": {
+            "map_document": {"id": SCENE, "name": "Bản đồ số di tích — Phường Vạn Xuân"},
             "map_info": {
                 "id": SCENE, "name": "Bản đồ số di tích — Phường Vạn Xuân",
                 "project_name": "Phường Vạn Xuân · Thái Nguyên",
@@ -322,7 +326,9 @@ def main():
                 },
             },
             "editor_items": items,
-            "models": [], "vegetation_instances": [], "vegetation_layers": [],
+            "models": [{"id": "m1", "name": "default"}],
+            "vegetation_items": [{"id": "v1", "name": "default"}],
+            "vegetation_instances": [], "vegetation_layers": [],
             "outlines": [], "hover_outlines": [], "embed_options": {},
         },
         "presentation": {"legacy": {
@@ -341,6 +347,7 @@ def main():
         fh.write("window.__MAPLIBRE_DOCUMENT__ = ")
         json.dump(doc, fh, ensure_ascii=False, indent=2)
         fh.write(";\n")
+        fh.write("window.__MAPLIBRE_LEGACY__ = window.__MAPLIBRE_DOCUMENT__.presentation.legacy;\n")
     print("map-data: %d di tích, %d lễ hội, %d tuyến tham quan" % (len(legacy_sites), len(legacy_fests), len(legacy_tours)))
 
 
