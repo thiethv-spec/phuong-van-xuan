@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "route-01",
+      "properties": {
+        "route_id": "T01",
+        "name": "Hành trình Di sản Tiên Phong - Ven sông Cầu",
+        "distance_km": 6.5,
+        "duration_hours": 3.0,
+        "relics_count": 11,
+        "color": "#8D4E2A",
+        "stroke_width": 4,
+        "relic_ids": [
+          "relic-13",
+          "relic-14",
+          "relic-04",
+          "relic-03",
+          "relic-17",
+          "relic-08",
+          "relic-07",
+          "relic-01",
+          "relic-11",
+          "relic-12",
+          "relic-10"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [105.921151, 21.378078],
+          [105.924751, 21.37932],
+          [105.914008, 21.380685],
+          [105.917846, 21.384511],
+          [105.9256, 21.3879],
+          [105.929105, 21.383303],
+          [105.930006, 21.383692],
+          [105.934438, 21.384312],
+          [105.937132, 21.388254],
+          [105.936739, 21.390646],
+          [105.938275, 21.397256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-02",
+      "properties": {
+        "route_id": "T02",
+        "name": "Không gian Tâm linh & Danh nhân Đồi Cao - Thanh Thù",
+        "distance_km": 5.2,
+        "duration_hours": 2.5,
+        "relics_count": 6,
+        "color": "#1B5E20",
+        "stroke_width": 4,
+        "relic_ids": [
+          "relic-09",
+          "relic-02",
+          "relic-05",
+          "relic-06",
+          "relic-15",
+          "relic-16"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [105.884391, 21.389369],
+          [105.893773, 21.39736],
+          [105.899244, 21.395908],
+          [105.900069, 21.402397],
+          [105.896287, 21.4142],
+          [105.886872, 21.417668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-03",
+      "properties": {
+        "route_id": "T03",
+        "name": "Trục Di sản Văn hóa Xuyên Phường Vạn Xuân",
+        "distance_km": 7.8,
+        "duration_hours": 3.5,
+        "relics_count": 6,
+        "color": "#0D47A1",
+        "stroke_width": 4,
+        "relic_ids": [
+          "relic-16",
+          "relic-02",
+          "relic-05",
+          "relic-03",
+          "relic-07",
+          "relic-01"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [105.886872, 21.417668],
+          [105.893773, 21.39736],
+          [105.899244, 21.395908],
+          [105.917846, 21.384511],
+          [105.930006, 21.383692],
+          [105.934438, 21.384312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-04",
+      "properties": {
+        "route_id": "T04",
+        "name": "Đại lộ trình Di sản Vạn Xuân (Heritage Loop)",
+        "distance_km": 18.5,
+        "duration_hours": 8.0,
+        "relics_count": 17,
+        "color": "#D84315",
+        "stroke_width": 5,
+        "relic_ids": [
+          "relic-02",
+          "relic-05",
+          "relic-09",
+          "relic-04",
+          "relic-03",
+          "relic-13",
+          "relic-14",
+          "relic-17",
+          "relic-08",
+          "relic-07",
+          "relic-01",
+          "relic-11",
+          "relic-12",
+          "relic-10",
+          "relic-15",
+          "relic-06",
+          "relic-16"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [105.893773, 21.39736],
+          [105.899244, 21.395908],
+          [105.884391, 21.389369],
+          [105.914008, 21.380685],
+          [105.917846, 21.384511],
+          [105.921151, 21.378078],
+          [105.924751, 21.37932],
+          [105.9256, 21.3879],
+          [105.929105, 21.383303],
+          [105.930006, 21.383692],
+          [105.934438, 21.384312],
+          [105.937132, 21.388254],
+          [105.936739, 21.390646],
+          [105.938275, 21.397256],
+          [105.896287, 21.4142],
+          [105.900069, 21.402397],
+          [105.886872, 21.417668],
+          [105.893773, 21.39736]
+        ]
+      }
+    }
+  ]
+}
