@@ -14,7 +14,7 @@
   var ROUTES = {
     home:   { path: "index.html",           label: "Trang chủ" },
     detail: { path: "pages/di-tich.html",   label: "Di tích",   params: ["id"] },
-    map:    { path: "pages/ban-do-so.html", label: "Bản đồ số", params: ["id"] },
+    map:    { path: "pages/ban-do.html",    label: "Bản đồ số", params: ["id"] },
     vr360:  { path: "pages/vr360.html",     label: "VR360",     params: ["id"] }
   };
   /* Thứ tự menu chính */
