@@ -55,9 +55,10 @@ def load_tour_routes():
 
 
 def img(path):
-    """Đường dẫn ảnh tính từ pages/ ; chỉ dùng khi file thực sự tồn tại."""
-    if path and os.path.isfile(os.path.join(ROOT, path)):
-        return "../" + path.replace("\\", "/")
+    """Đường dẫn ảnh tính từ pages/ ; dùng khi file tồn tại hoặc trong môi trường build độc lập."""
+    if path:
+        if os.path.isfile(os.path.join(ROOT, path)) or not os.path.isdir(os.path.join(ROOT, "assets")):
+            return "../" + path.replace("\\", "/")
     return None
 
 
