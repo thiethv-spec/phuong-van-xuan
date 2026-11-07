@@ -53,9 +53,17 @@ for(var k=0;k<F.length;k++){
 }
 
 var doc={
-  schema:"maplibre-document-v1",version:1,title:"Bản đồ số di tích — Phường Vạn Xuân",
-  editor_items:editor_items,models:[],vegetation_instances:[],outlines:[],hover_outlines:[],
+  schema:"maplibre-document v1",
+  version:1,
+  title:"Bản đồ số di tích — Phường Vạn Xuân",
+  editor_items:editor_items,
+  models:[{id:"m1",name:"default"}],
+  vegetation_items:[{id:"v1",name:"default"}],
+  vegetation_instances:[],
+  outlines:[],
+  hover_outlines:[],
   payload:{
+    map_document:{id:"van-xuan",name:"Bản đồ số di tích — Phường Vạn Xuân"},
     map_info:{
       id:"van-xuan",name:"Bản đồ số di tích — Phường Vạn Xuân",project_name:"Phường Vạn Xuân · Thái Nguyên",
       center:[105.911333,21.397873],zoom:13,pitch:0,bearing:0,fov:45,default_layer:"satellite",
@@ -66,7 +74,14 @@ var doc={
         document_provenance:{source:"tools/build_map_data.py từ root_data/vx-data.js",boundary:"OpenStreetMap relation 19523082"}
       }
     },
-    editor_items:editor_items,models:[],vegetation_instances:[],vegetation_layers:[],outlines:[],hover_outlines:[],embed_options:{}
+    editor_items:editor_items,
+    models:[{id:"m1",name:"default"}],
+    vegetation_items:[{id:"v1",name:"default"}],
+    vegetation_instances:[],
+    vegetation_layers:[],
+    outlines:[],
+    hover_outlines:[],
+    embed_options:{}
   },
   presentation:{
     legacy:{
@@ -78,4 +93,5 @@ var doc={
 };
 
 window.__MAPLIBRE_DOCUMENT__=doc;
+window.__MAPLIBRE_LEGACY__=doc.presentation.legacy;
 })();
