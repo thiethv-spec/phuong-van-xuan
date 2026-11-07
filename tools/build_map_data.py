@@ -3,6 +3,7 @@
 Nguồn:
   - root_data/vx-data.js            (17 di tích + 14 lễ hội, sinh bởi tools/build_data.py)
   - root_data/map/boundary_osm.geojson  (ranh giới phường Vạn Xuân – OSM relation 19523082)
+  - configs/ssot/tour-routes.json   (4 tuyến tham quan di sản chuyên đề phường Vạn Xuân)
 
 Chạy:  python tools/build_map_data.py      (sau khi chạy tools/build_data.py)
 Không bịa dữ liệu: trường nào nguồn không có thì để trống.
@@ -14,6 +15,7 @@ from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP_DIR = os.path.join(ROOT, "root_data", "map")
+CONFIGS_DIR = os.path.join(ROOT, "configs", "ssot")
 SCENE = "van-xuan"
 PLACEHOLDER = "https://placehold.co/800x600/EFE6D2/9E3B2E?text=No+Image"
 SITE_COLOR = "#9e3b2e"
@@ -23,10 +25,33 @@ TYPE_EN = {"dinh": "Communal house", "chua": "Pagoda", "den": "Temple", "khu_luu
 
 LUNAR_MONTH = {"giêng": 1, "chạp": 12}
 
+RELIC_ID_TO_STT = {
+    "relic-01": 1, "relic-02": 2, "relic-03": 3, "relic-04": 4,
+    "relic-05": 5, "relic-06": 6, "relic-07": 7, "relic-08": 8,
+    "relic-09": 9, "relic-10": 10, "relic-11": 11, "relic-12": 12,
+    "relic-13": 13, "relic-14": 14, "relic-15": 15, "relic-16": 16,
+    "relic-17": 17,
+}
+
+TOUR_EN_NAMES = {
+    "T01": "Tien Phong Heritage Journey - Along Cau River",
+    "T02": "Spiritual Space & Historical Figures Doi Cao - Thanh Thu",
+    "T03": "Trans-Van Xuan Cultural Heritage Axis",
+    "T04": "Van Xuan Heritage Loop (17 relics)",
+}
+
 
 def load_db():
     s = open(os.path.join(ROOT, "root_data", "vx-data.js"), encoding="utf-8").read()
     return json.loads(s[s.index("{"): s.rindex("}") + 1])
+
+
+def load_tour_routes():
+    path = os.path.join(CONFIGS_DIR, "tour-routes.json")
+    if os.path.isfile(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
 
 
 def img(path):
@@ -74,6 +99,7 @@ def main():
     db = load_db()
     sites = sorted(db["sites"], key=lambda s: s["stt"])
     fests = db["festivals"]
+    stt_to_site = {s["stt"]: s for s in sites}
 
     boundary = json.load(open(os.path.join(MAP_DIR, "boundary_osm.geojson"), encoding="utf-8"))
     ring = boundary["features"][0]["geometry"]["coordinates"][0]
@@ -162,6 +188,112 @@ def main():
     items.append({"id": boundary_id, "map_scene": SCENE, "kind": "landscape", "name": "Ranh giới phường Vạn Xuân",
                   "data": {"polygon": ring}, "is_visible": True, "sort_order": boundary_id})
 
+    # --- Tuyến tham quan (Tour routes) ---
+    tour_routes = load_tour_routes()
+    entity_groups = [
+        {"group_id": "van-xuan-ranh-gioi", "group_type": "zoning_cluster", "group_name": "Ranh giới hành chính",
+         "slug": "ranh-gioi", "theme_color": "#ff7a3d", "icon": "V", "filter_priority": 5,
+         "visibility_default": True, "inherit_styling": False,
+         "members": [{"entity_id": boundary_id, "entity_type": "polygon", "role": "boundary",
+                      "stop_order": None, "transit_time_from_prev": 0}],
+         "route_polyline_id": None, "metadata": {}},
+        {"group_id": "van-xuan-dia-diem", "group_type": "poi_category", "group_name": "Di tích",
+         "slug": "dia-diem", "theme_color": SITE_COLOR, "icon": "VX", "filter_priority": 0,
+         "visibility_default": True, "inherit_styling": False, "members": poi_members,
+         "route_polyline_id": None, "metadata": {}},
+    ]
+
+    legacy_tours = []
+    if tour_routes and "features" in tour_routes:
+        for idx, feat in enumerate(tour_routes["features"], start=1):
+            props = feat.get("properties", {})
+            geom = feat.get("geometry", {})
+            coords = geom.get("coordinates", [])
+            route_id = props.get("route_id", f"T{idx:02d}")
+            name = props.get("name", f"Tuyến {idx}")
+            dist = props.get("distance_km", 0)
+            dur = props.get("duration_hours", 0)
+            color = props.get("color", "#d6493a")
+            relic_ids = props.get("relic_ids", [])
+
+            line_item_id = boundary_id + idx
+            items.append({
+                "id": line_item_id,
+                "map_scene": SCENE,
+                "kind": "line",
+                "name": name,
+                "data": {
+                    "coords": coords,
+                    "cap_duong": "duong_xa",
+                    "route_type": "tourist_trail",
+                    "colorOverride": color,
+                    "animation_config": {
+                        "version": 1,
+                        "timing": "duration",
+                        "duration_ms": max(int(dur * 3600), 12000),
+                        "fit_bounds": True,
+                        "focus_duration_ms": 2500,
+                        "chase_cam": {
+                            "enabled": True,
+                            "pitch": 38,
+                            "smoothing": 0.045,
+                            "follow_distance_m": 200,
+                        },
+                    },
+                },
+                "is_visible": True,
+                "sort_order": line_item_id,
+            })
+
+            stt_list = [RELIC_ID_TO_STT[rid] for rid in relic_ids if rid in RELIC_ID_TO_STT]
+            route_members = [{
+                "entity_id": line_item_id,
+                "entity_type": "polyline",
+                "role": "primary_path",
+                "stop_order": None,
+                "transit_time_from_prev": 0,
+            }]
+            for stop_idx, stt in enumerate(stt_list, start=1):
+                route_members.append({
+                    "entity_id": stt,
+                    "entity_type": "marker",
+                    "role": "stop_point",
+                    "stop_order": stop_idx,
+                    "transit_time_from_prev": 3,
+                })
+
+            entity_groups.append({
+                "group_id": f"van-xuan-{route_id.lower()}",
+                "group_type": "tour_route",
+                "group_name": f"{route_id}: {name}",
+                "slug": route_id.lower(),
+                "theme_color": color,
+                "icon": "T",
+                "filter_priority": idx,
+                "visibility_default": True,
+                "inherit_styling": False,
+                "members": route_members,
+                "route_polyline_id": line_item_id,
+                "metadata": {
+                    "total_distance_km": dist,
+                    "estimated_duration_hours": dur,
+                    "hold_ms": 6000,
+                    "fly_ms": 3000,
+                    "orbit_speed_deg_s": 3.5,
+                    "transport_mode": "car" if idx in (2, 3) else "mixed",
+                },
+            })
+
+            site_keys = [stt_to_site[stt]["id"] for stt in stt_list if stt in stt_to_site]
+            legacy_tours.append({
+                "id": route_id,
+                "color": color,
+                "vi": {"n": name},
+                "en": {"n": TOUR_EN_NAMES.get(route_id, name)},
+                "sites": site_keys,
+                "wp": coords,
+            })
+
     doc = {
         "schema": "maplibre-document", "version": 1,
         "title": "Bản đồ số di tích — Phường Vạn Xuân",
@@ -176,24 +308,14 @@ def main():
                     "boundary_style": {"color": "#ff7a3d", "width": 3, "fill": 0.04, "dash": True, "dashColor": "#ffffff"},
                     "document_mask_outside": True,
                     "dem_enabled": False,
-                    "entity_groups": [
-                        {"group_id": "van-xuan-ranh-gioi", "group_type": "zoning_cluster", "group_name": "Ranh giới hành chính",
-                         "slug": "ranh-gioi", "theme_color": "#ff7a3d", "icon": "V", "filter_priority": 5,
-                         "visibility_default": True, "inherit_styling": False,
-                         "members": [{"entity_id": boundary_id, "entity_type": "polygon", "role": "boundary",
-                                      "stop_order": None, "transit_time_from_prev": 0}],
-                         "route_polyline_id": None, "metadata": {}},
-                        {"group_id": "van-xuan-dia-diem", "group_type": "poi_category", "group_name": "Di tích",
-                         "slug": "dia-diem", "theme_color": SITE_COLOR, "icon": "VX", "filter_priority": 0,
-                         "visibility_default": True, "inherit_styling": False, "members": poi_members,
-                         "route_polyline_id": None, "metadata": {}},
-                    ],
+                    "entity_groups": entity_groups,
                     "document_provenance": {
                         "source": "tools/build_map_data.py từ root_data/vx-data.js",
                         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                         "boundary": "OpenStreetMap relation 19523082 (Phường Vạn Xuân, admin_level 6), © OpenStreetMap contributors, ODbL",
                         "ubnd": "Chưa có toạ độ trụ sở UBND phường trong dữ liệu nguồn -> ẩn",
                         "festival_dates": "m/d/dur đọc từ cột 'lunarTime'; lễ hội không có ngày cụ thể thì bỏ trống",
+                        "tour_routes": "configs/ssot/tour-routes.json (4 tuyến tham quan di sản Phường Vạn Xuân)",
                     },
                 },
             },
@@ -205,7 +327,7 @@ def main():
             "tienich": [], "dulich": [],
             "ubnd": {"hidden": True, "ll": center, "image": PLACEHOLDER,
                      "vi": {"n": "", "t": "", "d": ""}, "en": {"n": "", "t": "", "d": ""}},
-            "tours": [], "proads": [], "details": details, "audio": {},
+            "tours": legacy_tours, "proads": [], "details": details, "audio": {},
             "default_basemap": "hybrid",
         }},
     }
@@ -218,7 +340,7 @@ def main():
         fh.write(";\n")
     no_img = [s["id"] for s in legacy_sites if s["image"] == PLACEHOLDER]
     no_date = [f["id"] for f in legacy_fests if "m" not in f]
-    print("map-data: %d di tích, %d lễ hội" % (len(legacy_sites), len(legacy_fests)))
+    print("map-data: %d di tích, %d lễ hội, %d tuyến tham quan" % (len(legacy_sites), len(legacy_fests), len(legacy_tours)))
     if no_img:
         print("  ! thiếu ảnh:", ", ".join(no_img))
     if no_date:
