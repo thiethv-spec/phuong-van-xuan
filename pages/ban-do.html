@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bản đồ số di tích – Phường Vạn Xuân, Tỉnh Thái Nguyên</title>
+  <meta name="description" content="Bản đồ số GIS định vị 17 di tích lịch sử và 4 tuyến tham quan di sản trên địa bàn phường Vạn Xuân, tỉnh Thái Nguyên.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 + Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Theme -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <style>
+    .vx-search--header{position:relative;display:flex;align-items:center;max-width:280px;width:100%;background:rgba(0,0,0,0.28);border:1px solid rgba(228,197,131,0.4);border-radius:24px;padding:4px 14px;transition:all .25s ease-in-out}.vx-search--header:focus-within{background:rgba(0,0,0,0.55);border-color:#e4c583;box-shadow:0 0 10px rgba(228,197,131,0.35)}.vx-search--header i{color:#e4c583;margin-right:8px;font-size:.95rem}.vx-search--header .form-control{border:none;background:transparent;color:#fff;padding:2px 0;font-size:.9rem;box-shadow:none}.vx-search--header .form-control::placeholder{color:rgba(255,255,255,0.65)}.vx-search--header .form-control:focus{outline:none;background:transparent;color:#fff;box-shadow:none}
+    
+    .vx-map-page-body {
+      padding: 32px 0 48px;
+      background: var(--vx-cream, #fcfaf7);
+    }
+    .vx-map-container-card {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 250px);
+      min-height: 680px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 32px rgba(0,0,0,0.12);
+      border: 1px solid rgba(228,197,131,0.4);
+      background: #1a1a1a;
+    }
+    .vx-map-container-card iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .vx-map-popout-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 10;
+      background: rgba(158,59,46,0.92);
+      color: #fff;
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      border: 1px solid rgba(228,197,131,0.5);
+      transition: all .2s ease-in-out;
+    }
+    .vx-map-popout-btn:hover {
+      background: #852d22;
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body data-route="map">
+
+  <!-- ================= HEADER DÙNG CHUNG ================= -->
+  <div data-vx-header></div>
+
+  <!-- ================= NỘI DUNG CHÍNH (CONTAINER ĐỒNG BỘ) ================= -->
+  <main class="vx-map-page-body">
+    <div class="container container-vx">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3">
+        <div>
+          <div class="vx-eyebrow text-uppercase text-danger fw-bold small mb-1" style="letter-spacing:1px;">Hệ thống GIS Phường Vạn Xuân</div>
+          <h1 class="vx-title h2 mb-1" style="font-family: var(--vx-font-heading, 'Playfair Display'); color: var(--vx-red-dark, #8b1e1e);">Bản đồ số Di tích Lịch sử</h1>
+          <p class="text-muted mb-0 small">Định vị trực quan 17 điểm di tích lịch sử cấp tỉnh, 14 lễ hội truyền thống và 4 tuyến du lịch tham quan chuyên đề.</p>
+        </div>
+        <div class="mt-2 mt-md-0">
+          <a href="ban-do-so.html" target="_blank" class="btn btn-sm btn-outline-danger px-3 py-1 rounded-pill">
+            <i class="bi bi-arrows-fullscreen me-1" aria-hidden="true"></i> Mở toàn màn hình
+          </a>
+        </div>
+      </div>
+
+      <!-- Container nhúng Iframe trang Bản đồ số -->
+      <div class="vx-map-container-card">
+        <iframe src="ban-do-so.html" title="Bản đồ số di tích phường Vạn Xuân" allow="fullscreen; geolocation" allowfullscreen></iframe>
+        <a class="vx-map-popout-btn" href="ban-do-so.html" target="_blank" title="Mở bản đồ ở tab mới để xem toàn màn hình">
+          <i class="bi bi-arrows-fullscreen me-1" aria-hidden="true"></i> Toàn màn hình
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER DÙNG CHUNG ================= -->
+  <div data-vx-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../root_data/vx-data.js"></script>
+  <script src="../assets/js/router.js"></script>
+  <script src="../assets/js/layout.js"></script>
+</body>
+</html>

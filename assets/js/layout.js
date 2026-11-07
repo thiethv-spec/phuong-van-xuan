@@ -15,6 +15,13 @@
     }).join("");
   }
 
+  function relicOptions() {
+    var sites = (VX.db && VX.db.sites) ? VX.db.sites : [];
+    return sites.map(function (s) {
+      return '<option value="' + s.name + '"></option>';
+    }).join("");
+  }
+
   function header() {
     return '' +
       '<header class="vx-header">' +
@@ -31,11 +38,16 @@
       '        <span class="navbar-toggler-icon"></span>' +
       '      </button>' +
       '      <div class="collapse navbar-collapse justify-content-end" id="mainNav">' +
-      '        <ul class="navbar-nav">' + navItems("nav-link") + "</ul>" +
-      "      </div>" +
-      "    </div>" +
-      "  </nav>" +
-      "</header>";
+      '        <ul class="navbar-nav me-lg-3">' + navItems("nav-link") + '</ul>' +
+      '        <form class="vx-search vx-search--header d-flex my-2 my-lg-0" role="search" action="' + VX.url("detail") + '" method="get">' +
+      '          <i class="bi bi-search" aria-hidden="true"></i>' +
+      '          <input class="form-control" type="search" name="q" placeholder="Tìm kiếm di tích..." aria-label="Tìm kiếm di tích" list="relicNames">' +
+      '          <datalist id="relicNames">' + relicOptions() + '</datalist>' +
+      '        </form>' +
+      '      </div>' +
+      '    </div>' +
+      '  </nav>' +
+      '</header>';
   }
 
   function footer() {

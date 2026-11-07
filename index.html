@@ -20,7 +20,7 @@
   <!-- Theme (tokens màu, font, component) -->
   <link rel="stylesheet" href="assets/css/theme.css">
   <style>
-    .vx-search--header{position:relative;display:flex;align-items:center;max-width:290px;width:100%;background:rgba(0,0,0,0.28);border:1px solid rgba(228,197,131,0.4);border-radius:24px;padding:4px 14px;transition:all .25s ease-in-out}.vx-search--header:focus-within{background:rgba(0,0,0,0.55);border-color:#e4c583;box-shadow:0 0 10px rgba(228,197,131,0.35)}.vx-search--header i{color:#e4c583;margin-right:8px;font-size:.95rem}.vx-search--header .form-control{border:none;background:transparent;color:#fff;padding:2px 0;font-size:.9rem;box-shadow:none}.vx-search--header .form-control::placeholder{color:rgba(255,255,255,0.65)}.vx-search--header .form-control:focus{outline:none;background:transparent;color:#fff;box-shadow:none}
+    .vx-search--header{position:relative;display:flex;align-items:center;max-width:280px;width:100%;background:rgba(0,0,0,0.28);border:1px solid rgba(228,197,131,0.4);border-radius:24px;padding:4px 14px;transition:all .25s ease-in-out}.vx-search--header:focus-within{background:rgba(0,0,0,0.55);border-color:#e4c583;box-shadow:0 0 10px rgba(228,197,131,0.35)}.vx-search--header i{color:#e4c583;margin-right:8px;font-size:.95rem}.vx-search--header .form-control{border:none;background:transparent;color:#fff;padding:2px 0;font-size:.9rem;box-shadow:none}.vx-search--header .form-control::placeholder{color:rgba(255,255,255,0.65)}.vx-search--header .form-control:focus{outline:none;background:transparent;color:#fff;box-shadow:none}
   </style>
 </head>
 <body data-route="home">
@@ -36,18 +36,21 @@
             <span class="vx-brand__sub">Phường Vạn Xuân, Tỉnh Thái Nguyên</span>
           </span>
         </a>
-        <form class="vx-search vx-search--header ms-lg-3 me-lg-3 d-none d-lg-flex" id="headerSearch" role="search" action="pages/di-tich.html" method="get"><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" type="search" name="q" placeholder="Tìm kiếm di tích..." aria-label="Tìm kiếm di tích" list="relicNames"><datalist id="relicNames"></datalist></form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-          <form class="vx-search vx-search--header d-flex d-lg-none my-3" id="mobileSearch" role="search" action="pages/di-tich.html" method="get"><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" type="search" name="q" placeholder="Tìm kiếm di tích..." aria-label="Tìm kiếm di tích" list="relicNames"></form>
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-lg-3">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/ban-do-so.html">Bản đồ số</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/ban-do.html">Bản đồ số</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/di-tich.html">Di tích</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/vr360.html">VR360</a></li>
           </ul>
+          <form class="vx-search vx-search--header d-flex my-2 my-lg-0" id="headerSearch" role="search" action="pages/di-tich.html" method="get">
+            <i class="bi bi-search" aria-hidden="true"></i>
+            <input class="form-control" type="search" name="q" placeholder="Tìm kiếm di tích..." aria-label="Tìm kiếm di tích" list="relicNames">
+            <datalist id="relicNames"></datalist>
+          </form>
         </div>
       </div>
     </nav>
@@ -63,7 +66,7 @@
       </div>
       <div class="container container-vx vx-hero__actions">
         <div class="d-flex justify-content-center">
-          <a href="#ban-do" class="btn btn-vx-gold btn-lg px-4 py-2">Khám phá Bản đồ số <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
+          <a href="pages/ban-do.html" class="btn btn-vx-gold btn-lg px-4 py-2">Khám phá Bản đồ số <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -80,7 +83,7 @@
         <div class="vx-map-frame">
           <iframe class="vx-map-embed" src="pages/ban-do-so.html" title="Bản đồ số di tích phường Vạn Xuân"
                   loading="lazy" allow="fullscreen; geolocation" allowfullscreen></iframe>
-          <a class="vx-map-open" href="pages/ban-do-so.html"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Xem đầy đủ bản đồ</a>
+          <a class="vx-map-open" href="pages/ban-do.html"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Xem trang bản đồ số đầy đủ</a>
         </div>
       </div>
     </section>
