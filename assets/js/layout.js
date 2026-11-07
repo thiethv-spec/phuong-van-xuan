@@ -40,8 +40,8 @@
       '      <div class="collapse navbar-collapse justify-content-end" id="mainNav">' +
       '        <ul class="navbar-nav me-lg-3">' + navItems("nav-link") + '</ul>' +
       '        <form class="vx-search vx-search--header d-flex my-2 my-lg-0" role="search" action="' + VX.url("detail") + '" method="get">' +
-      '          <i class="bi bi-search" aria-hidden="true"></i>' +
-      '          <input class="form-control" type="search" name="q" placeholder="Tìm kiếm di tích..." aria-label="Tìm kiếm di tích" list="relicNames">' +
+      '          <input class="form-control" type="search" name="q" placeholder="Tìm di tích..." aria-label="Tìm kiếm di tích" list="relicNames">' +
+      '          <button type="submit" aria-label="Tìm kiếm"><i class="bi bi-search" aria-hidden="true"></i></button>' +
       '          <datalist id="relicNames">' + relicOptions() + '</datalist>' +
       '        </form>' +
       '      </div>' +
@@ -75,6 +75,15 @@
     VX.route = document.body.getAttribute("data-route");
     document.querySelectorAll("[data-vx-header]").forEach(function (el) { el.outerHTML = header(); });
     document.querySelectorAll("[data-vx-footer]").forEach(function (el) { el.outerHTML = footer(); });
+    document.querySelectorAll(".vx-search--header").forEach(function (form) {
+      var input = form.querySelector('[name="q"]');
+      input.value = VX.param("q") || "";
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var query = input.value.trim();
+        VX.go("detail", query ? { q: query } : {});
+      });
+    });
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount);

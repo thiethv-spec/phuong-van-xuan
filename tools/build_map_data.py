@@ -295,11 +295,11 @@ def main():
             })
 
     doc = {
-        "schema": "maplibre-document v1", "version": 1,
+        "schema": "maplibre-document", "version": 1,
         "title": "Bản đồ số di tích — Phường Vạn Xuân",
         "editor_items": items,
-        "models": [{"id": "m1", "name": "default"}],
-        "vegetation_items": [{"id": "v1", "name": "default"}],
+        "models": [],
+        "vegetation_items": [],
         "vegetation_instances": [],
         "outlines": [], "hover_outlines": [],
         "payload": {
@@ -326,8 +326,8 @@ def main():
                 },
             },
             "editor_items": items,
-            "models": [{"id": "m1", "name": "default"}],
-            "vegetation_items": [{"id": "v1", "name": "default"}],
+            "models": [],
+            "vegetation_items": [],
             "vegetation_instances": [], "vegetation_layers": [],
             "outlines": [], "hover_outlines": [], "embed_options": {},
         },

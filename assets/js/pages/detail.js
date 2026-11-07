@@ -61,7 +61,8 @@
     if (!list.length && s.media.hero) list.push(s.media.hero);
     return list.map(function (src, i) {
       var caps = s.captions || [];
-      return { src: VX.asset(src), caption: caps[i] || (i === 0 ? "Toàn cảnh " + s.name : s.name + " – ảnh " + (i + 1)) };
+      var labels = s.media.captions || {};
+      return { src: VX.asset(src), caption: labels[src] || caps[i] || "Không gian " + s.name };
     });
   }
 
@@ -79,6 +80,24 @@
     }
     if (s.architecture) html += "<h3>Kiến trúc &amp; di vật</h3>" + paras(s.architecture);
     setHTML("prose", html);
+    var prose = slot("prose");
+    var text = prose.textContent.trim();
+    if (text.length > 320) {
+      var firstParagraph = prose.querySelector("p");
+      var preview = (firstParagraph ? firstParagraph.textContent : text).trim();
+      if (preview.length > 320) preview = preview.slice(0, 320).replace(/\s+\S*$/, "") + "…";
+      prose.innerHTML = '<div data-intro-preview><p>' + esc(preview) + '</p></div>' +
+        '<div id="introFull" hidden>' + html + '</div>' +
+        '<button type="button" class="btn btn-sm btn-outline-danger" aria-expanded="false" aria-controls="introFull">Xem thêm</button>';
+      var toggle = prose.querySelector("button");
+      toggle.addEventListener("click", function () {
+        var expanded = toggle.getAttribute("aria-expanded") !== "true";
+        prose.querySelector("[data-intro-preview]").hidden = expanded;
+        prose.querySelector("#introFull").hidden = !expanded;
+        toggle.setAttribute("aria-expanded", String(expanded));
+        toggle.textContent = expanded ? "Thu gọn" : "Xem thêm";
+      });
+    }
 
     var q = slot("quote");
     if (s.quote && s.quote.text) {
@@ -106,17 +125,17 @@
   function renderFestivals(s) {
     var list = VX.festivalsOf(s.id);
     if (!list.length) return setHTML("festivals", '<div class="vxd-empty">Thông tin lễ hội đang được cập nhật.</div>');
-    setHTML("festivals", list.map(function (f, i) {
-      var links = "";
-      if (f.article && f.article.url) links += '<a target="_blank" rel="noopener" href="' + esc(f.article.url) + '"><i class="bi bi-newspaper" aria-hidden="true"></i> ' + esc(f.article.label || "Đọc bài viết") + "</a>";
-      if (f.video && f.video.url) links += '<a target="_blank" rel="noopener" href="' + esc(f.video.url) + '"><i class="bi bi-play-circle" aria-hidden="true"></i> ' + esc(f.video.label || "Xem video") + "</a>";
-      return '<article class="vxd-fest">' +
-        '<div class="vxd-fest__head"><span class="vxd-fest__icon"><i class="bi bi-flag" aria-hidden="true"></i></span>' +
-        "<h4>" + (i + 1) + ". " + esc(f.name) + "<small>" + esc([lunar(f.lunarTime), f.solarTime].filter(Boolean).join(" · ")) + "</small></h4></div>" +
+    setHTML("festivals", list.map(function (f) {
+      var media = f.media || {};
+      var image = media.cover || (media.gallery || [])[0];
+      return '<article class="vxd-fest' + (image ? ' vxd-fest--with-image' : '') + '">' +
+        (image ? '<img class="vxd-fest__image" src="' + esc(VX.asset(image)) + '" alt="' + esc(f.name) + '" loading="lazy">' : '') +
+        '<div class="vxd-fest__body">' +
+        '<div class="vxd-fest__head">' +
+        "<h3>" + esc(f.name) + "<small>" + esc([lunar(f.lunarTime), f.solarTime].filter(Boolean).join(" · ")) + "</small></h3></div>" +
         (f.rituals ? "<p><strong>Nghi lễ:</strong> " + esc(f.rituals) + "</p>" : "") +
         (f.activities ? "<p><strong>Phần hội:</strong> " + esc(f.activities) + "</p>" : "") +
-        (links ? '<div class="vxd-fest__links">' + links + "</div>" : "") +
-        "</article>";
+        "</div></article>";
     }).join(""));
   }
 
@@ -141,25 +160,59 @@
     var shots = document.querySelectorAll(".vxd-gallery .vxd-shot");
     var btns = document.querySelectorAll("[data-gallery]");
     var start = 0;
+    var gallery = document.getElementById("anh");
+    var timer = null;
+    var hovered = false;
+    var touching = false;
+    var inView = false;
+    var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     document.getElementById("anh").hidden = !imgs.length;
     if (!imgs.length) return;
+    function autoplay() {
+      window.clearInterval(timer);
+      timer = null;
+      if (imgs.length <= 1 || hovered || touching || gallery.contains(document.activeElement) || document.hidden || !inView || reducedMotion.matches) return;
+      timer = window.setInterval(function () {
+        start = (start + 1) % imgs.length;
+        draw();
+      }, 5000);
+    }
     function draw() {
       shots.forEach(function (fig, k) {
         var item = imgs.length ? imgs[(start + k) % imgs.length] : null;
         var show = item && (imgs.length > k || k === 0);
+        fig.hidden = !show;
         var frame = fig.querySelector(".vxd-shot__frame");
-        frame.innerHTML = show ? '<img loading="lazy" src="' + esc(item.src) + '" alt="' + esc(item.caption) + '">' : "";
+        frame.innerHTML = show ? '<img loading="lazy" width="1200" height="900" src="' + esc(item.src) + '" alt="' + esc(item.caption) + '">' : "";
         fig.querySelector("figcaption").textContent = show ? item.caption : "";
       });
-      btns.forEach(function (b) { b.disabled = imgs.length <= shots.length; });
+      var counter = document.querySelector("[data-gallery-status]");
+      counter.textContent = String(start + 1).padStart(2, "0") + " / " + String(imgs.length).padStart(2, "0");
+      counter.setAttribute("aria-label", "Ảnh " + (start + 1) + " trên " + imgs.length);
+      btns.forEach(function (b) { b.disabled = imgs.length <= 1; });
     }
     btns.forEach(function (b) {
       b.addEventListener("click", function () {
         start = (start + Number(b.getAttribute("data-gallery")) + imgs.length) % imgs.length;
         draw();
+        autoplay();
       });
     });
     draw();
+    gallery.addEventListener("mouseenter", function () { hovered = true; autoplay(); });
+    gallery.addEventListener("mouseleave", function () { hovered = false; autoplay(); });
+    gallery.addEventListener("focusin", autoplay);
+    gallery.addEventListener("focusout", function () { window.setTimeout(autoplay, 0); });
+    gallery.addEventListener("touchstart", function () { touching = true; autoplay(); }, { passive: true });
+    function endTouch() { touching = false; autoplay(); }
+    gallery.addEventListener("touchend", endTouch, { passive: true });
+    gallery.addEventListener("touchcancel", endTouch, { passive: true });
+    document.addEventListener("visibilitychange", autoplay);
+    reducedMotion.addEventListener("change", autoplay);
+    new IntersectionObserver(function (entries) {
+      inView = entries[0].isIntersecting;
+      autoplay();
+    }, { threshold: 0.2 }).observe(gallery);
   }
 
   function renderQR() {
@@ -205,15 +258,26 @@
   }
 
   function renderList() {
-    document.title = "Danh sách di tích – Phường Vạn Xuân";
+    var query = (VX.param("q") || "").trim();
+    var sites = query ? VX.search(query) : VX.db.sites;
+    document.title = (query ? "Tìm kiếm: " + query : "Danh sách di tích") + " – Phường Vạn Xuân";
     document.getElementById("listView").hidden = false;
     document.getElementById("listBody").innerHTML =
-      '<div class="vx-head"><div class="vx-eyebrow">' + VX.db.sites.length + ' điểm di tích cấp tỉnh</div><h1 class="vx-title">Danh sách di tích</h1></div>' +
-      '<div class="row g-3">' + VX.db.sites.map(function (s) {
-        return '<div class="col-12 col-md-6 col-lg-4"><a class="card h-100 text-decoration-none" href="' + VX.url("detail", { id: s.id }) + '">' +
-          (s.media.cover ? '<img class="card-img-top" style="aspect-ratio:4/3;object-fit:cover" loading="lazy" src="' + VX.asset(s.media.cover) + '" alt="">' : "") +
-          '<div class="card-body"><small class="text-muted">' + s.stt + " · " + esc(s.rank) + '</small><h2 class="h6 mt-1 mb-1">' + esc(s.name) + "</h2>" +
-          '<small class="text-muted">' + esc(s.address) + "</small></div></a></div>";
+      '<div class="vx-head"><div class="vx-eyebrow">' + sites.length + (query ? ' kết quả tìm kiếm' : ' điểm di tích cấp tỉnh') + '</div><h1 class="vx-title">' + (query ? 'Kết quả cho “' + esc(query) + '”' : 'Danh sách di tích') + '</h1></div>' +
+      (query ? '<p><a href="' + VX.url("detail") + '">Xem tất cả di tích</a></p>' : '') +
+      (!sites.length ? '<p role="status">Không tìm thấy di tích phù hợp. Hãy thử tên khác hoặc từ khóa ngắn hơn.</p>' : '') +
+      '<div class="vx-place-list">' + sites.map(function (s) {
+        var media = s.media || {};
+        var gallery = media.gallery || [];
+        var firstPhoto = gallery.find(function (src) { return /\/1\.[^/]+$/i.test(src); }) || gallery[0];
+        var image = media.avatar || firstPhoto;
+        return '<div class="vx-place-list__item"><a class="vx-place-card' + (media.avatar ? ' vx-place-card--avatar' : '') + '" aria-labelledby="place-' + esc(s.id) + '" href="' + VX.url("detail", { id: s.id }) + '">' +
+          (image ? '<img class="vx-place-card__image" width="1200" height="' + (media.avatar ? '1200' : '900') + '" loading="lazy" src="' + esc(VX.asset(image)) + '" alt="">' : "") +
+          '<span class="vx-place-card__badge">' + esc(cap(String(s.rank || "Di tích").toLowerCase())) + '</span>' +
+          '<div class="vx-place-card__content"><h2 id="place-' + esc(s.id) + '" class="vx-place-card__title">' + esc(s.name) + '</h2>' +
+          '<div class="vx-place-card__reveal"><div class="vx-place-card__details"><p>' + esc(s.address) + '</p>' +
+          '<span class="vx-place-card__cta">Xem chi tiết di tích <i class="bi bi-arrow-right" aria-hidden="true"></i></span>' +
+          '</div></div></div></a></div>';
       }).join("") + "</div>";
   }
 

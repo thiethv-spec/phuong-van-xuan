@@ -3,7 +3,7 @@ window.VX_DB = {
   "meta": {
     "title": "Di tích lịch sử – Phường Vạn Xuân, Tỉnh Thái Nguyên",
     "source": "Danh_sach_17_di_tich_phuong_Van_Xuan.xlsx",
-    "generatedAt": "2026-11-06T19:04:49",
+    "generatedAt": "2026-11-07T22:00:41",
     "counts": {
       "sites": 17,
       "festivals": 14
@@ -124,16 +124,22 @@ window.VX_DB = {
       "media": {
         "hero": null,
         "avatar": null,
-        "cover": "assets/img/dia_diem/dinh_thu_lam/1.jpg",
+        "cover": "assets/img/dia_diem/dinh_thu_lam/1.png",
         "gallery": [
-          "assets/img/dia_diem/dinh_thu_lam/1.jpg",
           "assets/img/dia_diem/dinh_thu_lam/1.png",
           "assets/img/dia_diem/dinh_thu_lam/2.png",
           "assets/img/dia_diem/dinh_thu_lam/3.png",
           "assets/img/dia_diem/dinh_thu_lam/4.png"
-        ]
+        ],
+        "captions": {
+          "assets/img/dia_diem/dinh_thu_lam/1.png": "C?ng v? m?t tr??c c?ng tr?nh",
+          "assets/img/dia_diem/dinh_thu_lam/2.png": "S?n g?ch v? hi?n ??nh",
+          "assets/img/dia_diem/dinh_thu_lam/3.png": "C?a g? v? b?c tam c?p",
+          "assets/img/dia_diem/dinh_thu_lam/4.png": "M?i ng?i v? c?a s? tr?n b?n ??nh"
+        }
       },
-      "vr360": null
+      "vr360": null,
+      "corrections": []
     },
     {
       "id": "chua_doi_cao",

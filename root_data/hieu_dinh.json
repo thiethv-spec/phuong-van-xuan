@@ -6,6 +6,16 @@
     "HANNOM2009": "https://hannom.vass.gov.vn/tong-muc-luc/8-di-san-han-nom-moi-phat-hien-tai-huyen-pho-yen-thai-nguyen-tbhnh-2009-506608"
   },
   "sites": {
+  "dinh_thu_lam": {
+    "set": {
+      "media.captions": {
+        "assets/img/dia_diem/dinh_thu_lam/1.png": "C?ng v? m?t tr??c c?ng tr?nh",
+        "assets/img/dia_diem/dinh_thu_lam/2.png": "S?n g?ch v? hi?n ??nh",
+        "assets/img/dia_diem/dinh_thu_lam/3.png": "C?a g? v? b?c tam c?p",
+        "assets/img/dia_diem/dinh_thu_lam/4.png": "M?i ng?i v? c?a s? tr?n b?n ??nh"
+      }
+    }
+  },
     "chua_doi_cao": {
       "set": {
         "headline": "Ngôi chùa trên đồi thờ Phật, thờ Mẫu, còn bia đá năm 1698",
