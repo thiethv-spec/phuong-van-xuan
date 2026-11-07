@@ -189,7 +189,6 @@ def main():
     items.append({"id": boundary_id, "map_scene": SCENE, "kind": "landscape", "name": "Ranh giới phường Vạn Xuân",
                   "data": {"polygon": ring}, "is_visible": True, "sort_order": boundary_id})
 
-    # --- Tuyến tham quan (Tour routes) ---
     tour_routes = load_tour_routes()
     entity_groups = [
         {"group_id": "van-xuan-ranh-gioi", "group_type": "zoning_cluster", "group_name": "Ranh giới hành chính",
@@ -296,8 +295,10 @@ def main():
             })
 
     doc = {
-        "schema": "maplibre-document", "version": 1,
+        "schema": "maplibre-document-v1", "version": 1,
         "title": "Bản đồ số di tích — Phường Vạn Xuân",
+        "editor_items": items, "models": [], "vegetation_instances": [],
+        "outlines": [], "hover_outlines": [],
         "payload": {
             "map_info": {
                 "id": SCENE, "name": "Bản đồ số di tích — Phường Vạn Xuân",
@@ -321,7 +322,8 @@ def main():
                 },
             },
             "editor_items": items,
-            "models": [], "vegetation_layers": [], "embed_options": {},
+            "models": [], "vegetation_instances": [], "vegetation_layers": [],
+            "outlines": [], "hover_outlines": [], "embed_options": {},
         },
         "presentation": {"legacy": {
             "sites": legacy_sites, "villages": [], "festivals": legacy_fests,
@@ -339,13 +341,7 @@ def main():
         fh.write("window.__MAPLIBRE_DOCUMENT__ = ")
         json.dump(doc, fh, ensure_ascii=False, indent=2)
         fh.write(";\n")
-    no_img = [s["id"] for s in legacy_sites if s["image"] == PLACEHOLDER]
-    no_date = [f["id"] for f in legacy_fests if "m" not in f]
     print("map-data: %d di tích, %d lễ hội, %d tuyến tham quan" % (len(legacy_sites), len(legacy_fests), len(legacy_tours)))
-    if no_img:
-        print("  ! thiếu ảnh:", ", ".join(no_img))
-    if no_date:
-        print("  ! lễ hội chưa có ngày cụ thể:", ", ".join(no_date))
 
 
 if __name__ == "__main__":
